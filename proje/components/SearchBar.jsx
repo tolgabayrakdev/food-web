@@ -10,7 +10,7 @@ export default function SearchBar() {
   const handleSearch = (e) => {
     e.preventDefault();
     if (query.trim()) {
-      router.push(`/arama?q=${encodeURIComponent(query.trim())}`);
+      router.push(`/tarifler?q=${encodeURIComponent(query.trim())}`);
     }
   };
 

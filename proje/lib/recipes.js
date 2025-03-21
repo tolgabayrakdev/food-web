@@ -70,4 +70,35 @@ export function searchRecipes(query) {
         slug: createRecipeSlug(recipe.title)
       }))
   );
+}
+
+export function getAllRecipes(categorySlug = null) {
+  // Get all recipes from all categories or filter by categorySlug if provided
+  const allRecipes = recipes.flatMap(category => {
+    // Skip categories that don't match if categorySlug is provided
+    if (categorySlug && category.category !== categorySlug) {
+      return [];
+    }
+    
+    return category.recipes.map(recipe => ({
+      ...recipe,
+      categoryName: category.categoryName,
+      categorySlug: category.category,
+      slug: createRecipeSlug(recipe.title)
+    }));
+  });
+  
+  return allRecipes;
+}
+
+export function paginateRecipes(recipeList, page = 1, limit = 9) {
+  const startIndex = (page - 1) * limit;
+  const endIndex = startIndex + limit;
+  
+  return {
+    recipes: recipeList.slice(startIndex, endIndex),
+    totalPages: Math.ceil(recipeList.length / limit),
+    currentPage: page,
+    totalRecipes: recipeList.length
+  };
 } 

@@ -28,8 +28,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/populer" className="text-sm opacity-80 hover:opacity-100">
-                  Popüler Tarifler
+                <Link href="/tarifler" className="text-sm opacity-80 hover:opacity-100">
+                  Tüm Tarifler
                 </Link>
               </li>
               <li>

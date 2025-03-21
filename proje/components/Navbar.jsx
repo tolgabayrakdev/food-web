@@ -10,6 +10,13 @@ export default function Navbar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const navigation = [
+    { name: 'Ana Sayfa', href: '/' },
+    { name: 'Tarifler', href: '/tarifler' },
+    { name: 'Kategoriler', href: '/kategoriler' },
+    { name: 'Hakkımızda', href: '/hakkimizda' },
+  ];
+
   return (
     <nav className="bg-indigo-600 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,10 +41,10 @@ export default function Navbar() {
               Kategoriler
             </Link>
             <Link 
-              href="/populer" 
+              href="/tarifler" 
               className="text-white hover:bg-indigo-700 px-3 py-2 rounded-md text-sm font-medium"
             >
-              Popüler Tarifler
+              Tarifler
             </Link>
             <Link 
               href="/hakkimizda" 
@@ -96,10 +103,10 @@ export default function Navbar() {
               Kategoriler
             </Link>
             <Link
-              href="/populer"
+              href="/tarifler"
               className="text-white hover:bg-indigo-700 block px-3 py-2 rounded-md text-base font-medium"
             >
-              Popüler Tarifler
+              Tarifler
             </Link>
             <Link
               href="/hakkimizda"

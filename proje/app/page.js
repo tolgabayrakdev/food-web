@@ -3,12 +3,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import CategoryCard from "@/components/CategoryCard";
-import RecipeCard from "@/components/RecipeCard";
-import { getAllCategories, getPopularRecipes } from "@/lib/recipes";
+import { getAllCategories } from "@/lib/recipes";
 
 export default function Home() {
   const categories = getAllCategories();
-  const popularRecipes = getPopularRecipes(3);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -38,46 +36,10 @@ export default function Home() {
             
             <div className="mt-12 text-center">
               <a 
-                href="/kategoriler" 
+                href="/tarifler" 
                 className="inline-flex items-center px-6 py-3 bg-indigo-50 text-indigo-700 rounded-full font-medium hover:bg-indigo-100 transition-colors"
               >
-                Tüm Kategorileri Gör
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </section>
-        
-        {/* Popular Recipes Section */}
-        <section className="bg-gradient-to-b from-indigo-50 to-white py-20">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="text-center mb-16">
-              <span className="text-indigo-600 text-sm font-semibold tracking-wider uppercase">EN SEVİLENLER</span>
-              <h2 className="text-4xl font-bold text-gray-800 mt-2 mb-4">Popüler Tarifler</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Mutfak tutkunları tarafından en çok beğenilen ve denenen lezzetli tariflerimiz
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {popularRecipes.map((recipe) => (
-                <div key={recipe.id}>
-                  <RecipeCard 
-                    recipe={recipe} 
-                    categorySlug={recipe.categorySlug} 
-                  />
-                </div>
-              ))}
-            </div>
-            
-            <div className="text-center mt-12">
-              <a 
-                href="/populer" 
-                className="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors"
-              >
-                Tüm Popüler Tarifleri Gör
+                Tüm Tarifleri Gör
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
@@ -173,12 +135,20 @@ export default function Home() {
             <p className="text-xl mb-10 max-w-3xl mx-auto opacity-90">
               Geleneksel Türk mutfağının zengin lezzetleri sizi bekliyor. Hemen kaydolun ve size özel tarifleri keşfedin.
             </p>
-            <a 
-              href="/uye-ol" 
-              className="inline-block px-8 py-4 bg-white text-indigo-700 rounded-full font-bold text-lg shadow-xl hover:bg-gray-100 transition-colors hover:shadow-2xl"
-            >
-              Ücretsiz Hesap Oluştur
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="/uye-ol" 
+                className="inline-block px-8 py-4 bg-white text-indigo-700 rounded-full font-bold text-lg shadow-xl hover:bg-gray-100 transition-colors hover:shadow-2xl"
+              >
+                Ücretsiz Hesap Oluştur
+              </a>
+              <a 
+                href="/tarifler" 
+                className="inline-block px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-indigo-700 transition-colors"
+              >
+                Tariflere Göz At
+              </a>
+            </div>
           </div>
         </section>
       </main>
