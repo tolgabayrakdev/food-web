@@ -1,8 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Card } from "./ui/card";
+import { createRecipeSlug } from "@/lib/recipes";
 
 export default function RecipeCard({ recipe, categorySlug }) {
+  const recipeSlug = recipe.slug || createRecipeSlug(recipe.title);
+  
   return (
     <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
       <div className="relative h-48 w-full">
@@ -38,7 +41,7 @@ export default function RecipeCard({ recipe, categorySlug }) {
             {recipe.difficulty}
           </span>
           <Link 
-            href={`/kategori/${categorySlug}/${recipe.id}`}
+            href={`/kategori/${categorySlug}/${recipeSlug}`}
             className="px-4 py-2 bg-rose-600 text-white rounded-md text-sm font-medium hover:bg-rose-700 transition-colors"
           >
             Tarifi Gör

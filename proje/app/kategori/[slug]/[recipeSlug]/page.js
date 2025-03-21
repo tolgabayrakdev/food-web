@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { getRecipeById, getCategoryBySlug, getAllCategories } from "@/lib/recipes";
+import { getRecipeBySlug, getCategoryBySlug, getAllCategories, createRecipeSlug } from "@/lib/recipes";
 
 export function generateMetadata({ params }) {
-  const recipe = getRecipeById(params.slug, params.recipeId);
+  const recipe = getRecipeBySlug(params.slug, params.recipeSlug);
   
   if (!recipe) {
     return {
@@ -26,13 +26,13 @@ export function generateStaticParams() {
   return categories.flatMap((category) => 
     category.recipes.map((recipe) => ({
       slug: category.category,
-      recipeId: recipe.id,
+      recipeSlug: createRecipeSlug(recipe.title),
     }))
   );
 }
 
 export default function RecipePage({ params }) {
-  const recipe = getRecipeById(params.slug, params.recipeId);
+  const recipe = getRecipeBySlug(params.slug, params.recipeSlug);
   const category = getCategoryBySlug(params.slug);
   
   if (!recipe || !category) {
