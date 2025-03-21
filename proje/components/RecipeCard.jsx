@@ -18,7 +18,7 @@ export default function RecipeCard({ recipe, categorySlug }) {
       </div>
       
       <div className="p-4">
-        <h3 className="text-xl font-semibold mb-2 text-rose-800">{recipe.title}</h3>
+        <h3 className="text-xl font-semibold mb-2 text-orange-800">{recipe.title}</h3>
         <p className="text-gray-600 text-sm mb-4">{recipe.description}</p>
         
         <div className="flex justify-between items-center text-xs text-gray-500 mb-4">
@@ -37,12 +37,12 @@ export default function RecipeCard({ recipe, categorySlug }) {
         </div>
         
         <div className="flex justify-between items-center">
-          <span className="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-xs font-medium">
+          <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-medium">
             {recipe.difficulty}
           </span>
           <Link 
             href={`/kategori/${categorySlug}/${recipeSlug}`}
-            className="px-4 py-2 bg-rose-600 text-white rounded-md text-sm font-medium hover:bg-rose-700 transition-colors"
+            className="px-4 py-2 bg-orange-600 text-white rounded-md text-sm font-medium hover:bg-orange-700 transition-colors"
           >
             Tarifi Gör
           </Link>
