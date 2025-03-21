@@ -28,30 +28,39 @@ export default function RecipesPage() {
     currentPage: 1,
     totalRecipes: 0
   });
+  const [isLoading, setIsLoading] = useState(true);
   
   // Get all categories for the filter
   const categories = getAllCategories();
   
   useEffect(() => {
-    let filteredRecipes = [];
+    setIsLoading(true);
     
-    // Handle search query first
-    if (query) {
-      filteredRecipes = searchRecipes(query);
-      // Apply category filter to search results if needed
-      if (categorySlug) {
-        filteredRecipes = filteredRecipes.filter(recipe => recipe.categorySlug === categorySlug);
+    // Small timeout to allow for better UX during typing
+    const timeoutId = setTimeout(() => {
+      let filteredRecipes = [];
+      
+      // Handle search query first
+      if (query) {
+        filteredRecipes = searchRecipes(query);
+        // Apply category filter to search results if needed
+        if (categorySlug) {
+          filteredRecipes = filteredRecipes.filter(recipe => recipe.categorySlug === categorySlug);
+        }
+      } else {
+        // If no search query, get recipes by category or all recipes
+        filteredRecipes = getAllRecipes(categorySlug || null);
       }
-    } else {
-      // If no search query, get recipes by category or all recipes
-      filteredRecipes = getAllRecipes(categorySlug || null);
-    }
+      
+      setRecipes(filteredRecipes);
+      
+      // Apply pagination to the filtered recipes
+      const paginatedResult = paginateRecipes(filteredRecipes, currentPage, RECIPES_PER_PAGE);
+      setPagination(paginatedResult);
+      setIsLoading(false);
+    }, 150);
     
-    setRecipes(filteredRecipes);
-    
-    // Apply pagination to the filtered recipes
-    const paginatedResult = paginateRecipes(filteredRecipes, currentPage, RECIPES_PER_PAGE);
-    setPagination(paginatedResult);
+    return () => clearTimeout(timeoutId);
   }, [query, categorySlug, currentPage]);
   
   return (
@@ -97,7 +106,11 @@ export default function RecipesPage() {
               </div>
               
               {/* Recipe grid */}
-              {pagination.recipes.length > 0 ? (
+              {isLoading ? (
+                <div className="flex justify-center py-8">
+                  <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-indigo-600"></div>
+                </div>
+              ) : pagination.recipes.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {pagination.recipes.map((recipe) => (
                     <RecipeCard 
@@ -123,10 +136,12 @@ export default function RecipesPage() {
               )}
               
               {/* Pagination */}
-              <Pagination 
-                totalPages={pagination.totalPages} 
-                currentPage={pagination.currentPage} 
-              />
+              {!isLoading && (
+                <Pagination 
+                  totalPages={pagination.totalPages} 
+                  currentPage={pagination.currentPage} 
+                />
+              )}
             </div>
           </div>
         </div>

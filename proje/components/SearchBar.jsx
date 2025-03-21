@@ -1,22 +1,48 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 export default function SearchBar() {
   const [query, setQuery] = useState("");
   const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
 
-  const handleSearch = (e) => {
+  // Initialize query from URL on component mount
+  useEffect(() => {
+    const urlQuery = searchParams.get("q") || "";
+    setQuery(urlQuery);
+  }, [searchParams]);
+
+  // Update search results when query changes
+  useEffect(() => {
+    // Small delay to avoid too many router pushes while typing
+    const timeoutId = setTimeout(() => {
+      // Keep the current URL path (either /tarifler or /arama)
+      if (query.trim()) {
+        router.push(`${pathname}?q=${encodeURIComponent(query.trim())}`);
+      } else {
+        router.push(pathname);
+      }
+    }, 300); // 300ms delay
+
+    return () => clearTimeout(timeoutId);
+  }, [query, pathname, router]);
+
+  const handleSubmit = (e) => {
     e.preventDefault();
+    // Redirect to /tarifler on manual form submission
     if (query.trim()) {
       router.push(`/tarifler?q=${encodeURIComponent(query.trim())}`);
+    } else {
+      router.push('/tarifler');
     }
   };
 
   return (
     <form 
-      onSubmit={handleSearch}
+      onSubmit={handleSubmit}
       className="max-w-xl mx-auto w-full"
     >
       <div className="relative flex items-center">

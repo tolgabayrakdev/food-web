@@ -54,7 +54,7 @@ export function getPopularRecipes(limit = 6) {
 }
 
 export function searchRecipes(query) {
-  if (!query) return [];
+  if (!query) return getAllRecipes(); // Return all recipes when query is empty
   
   const normalizedQuery = query.toLowerCase().trim();
   

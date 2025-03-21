@@ -12,14 +12,19 @@ export default function SearchPage() {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") || "";
   const [results, setResults] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   
+  // Update results whenever query param changes
   useEffect(() => {
-    if (query) {
-      const foundRecipes = searchRecipes(query);
-      setResults(foundRecipes);
-    } else {
-      setResults([]);
-    }
+    setIsLoading(true);
+    // Small timeout to allow for better UX during typing
+    const timeoutId = setTimeout(() => {
+      const searchResults = searchRecipes(query);
+      setResults(searchResults);
+      setIsLoading(false);
+    }, 150);
+    
+    return () => clearTimeout(timeoutId);
   }, [query]);
   
   return (
@@ -35,7 +40,11 @@ export default function SearchPage() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 py-16">
-          {query ? (
+          {isLoading ? (
+            <div className="flex justify-center py-8">
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-indigo-600"></div>
+            </div>
+          ) : query ? (
             <>
               <h2 className="text-2xl font-bold text-indigo-800 mb-6">
                 "{query}" için arama sonuçları
@@ -64,15 +73,21 @@ export default function SearchPage() {
               )}
             </>
           ) : (
-            <div className="text-center py-16">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mx-auto text-indigo-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Bir tarif arayın</h3>
-              <p className="text-gray-600 max-w-md mx-auto">
-                Arama kutusunu kullanarak istediğiniz yemek tarifini bulabilirsiniz.
-              </p>
-            </div>
+            <>
+              <h2 className="text-2xl font-bold text-indigo-800 mb-6">
+                Tüm Tarifler
+              </h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {results.map((recipe) => (
+                  <RecipeCard 
+                    key={recipe.id} 
+                    recipe={recipe} 
+                    categorySlug={recipe.categorySlug} 
+                  />
+                ))}
+              </div>
+            </>
           )}
         </div>
       </main>
