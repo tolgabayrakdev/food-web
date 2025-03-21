@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import CategoryCard from "@/components/CategoryCard";
 import RecipeCard from "@/components/RecipeCard";
 import { getAllCategories, getPopularRecipes } from "@/lib/recipes";
+import { motion } from "framer-motion";
 
 export const metadata = {
   title: "Lezzet Dünyası - Türk Mutfağının En Lezzetli Yemek Tarifleri",
@@ -19,6 +20,22 @@ export default function Home() {
   const categories = getAllCategories();
   const popularRecipes = getPopularRecipes(3);
 
+  // Animation variants for scroll animations
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -26,96 +43,205 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         
-        <section className="max-w-7xl mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold text-indigo-800 mb-8 text-center">Yemek Kategorileri</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {categories.map((category) => (
-              <CategoryCard key={category.id} category={category} />
-            ))}
-          </div>
-        </section>
-        
-        <section className="bg-indigo-50 py-16">
+        {/* Categories Section with new design */}
+        <section className="py-20">
           <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-indigo-800 mb-8 text-center">Popüler Tarifler</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {popularRecipes.map((recipe) => (
-                <RecipeCard 
-                  key={recipe.id} 
-                  recipe={recipe} 
-                  categorySlug={recipe.categorySlug} 
-                />
-              ))}
+            <div className="text-center mb-16">
+              <span className="text-indigo-600 text-sm font-semibold tracking-wider uppercase">KEŞFEDIN</span>
+              <h2 className="text-4xl font-bold text-gray-800 mt-2 mb-4">Yemek Kategorileri</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Türk mutfağının zengin kategorileri arasında gezinin ve damak zevkinize uygun tarifleri keşfedin
+              </p>
             </div>
             
-            <div className="text-center mt-12">
+            <motion.div 
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+            >
+              {categories.map((category, index) => (
+                <motion.div key={category.id} variants={itemVariants}>
+                  <CategoryCard category={category} />
+                </motion.div>
+              ))}
+            </motion.div>
+            
+            <div className="mt-12 text-center">
               <a 
-                href="/populer" 
-                className="inline-block px-6 py-3 border-2 border-indigo-600 text-indigo-600 font-medium rounded-md hover:bg-indigo-600 hover:text-white transition-colors"
+                href="/kategoriler" 
+                className="inline-flex items-center px-6 py-3 bg-indigo-50 text-indigo-700 rounded-full font-medium hover:bg-indigo-100 transition-colors"
               >
-                Tüm Popüler Tarifleri Gör
+                Tüm Kategorileri Gör
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
               </a>
             </div>
           </div>
         </section>
         
-        <section className="max-w-7xl mx-auto px-4 py-16 text-center">
-          <h2 className="text-3xl font-bold text-indigo-800 mb-6">Mutfakta Profesyonel Ol</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-10">
-            Lezzet Dünyası ile ev yemeklerinde profesyonel dokunuşlar. 
-            Detaylı tarifler, püf noktaları ve geleneksel Türk lezzetleri 
-            sizleri bekliyor.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Detaylı Tarifler</h3>
-              <p className="text-gray-600">Adım adım anlatımlı, ölçülü ve detaylı tarifler.</p>
+        {/* Popular Recipes Section */}
+        <section className="bg-gradient-to-b from-indigo-50 to-white py-20">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <span className="text-indigo-600 text-sm font-semibold tracking-wider uppercase">EN SEVİLENLER</span>
+              <h2 className="text-4xl font-bold text-gray-800 mt-2 mb-4">Popüler Tarifler</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Mutfak tutkunları tarafından en çok beğenilen ve denenen lezzetli tariflerimiz
+              </p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Geleneksel Tatlar</h3>
-              <p className="text-gray-600">Türk mutfağının en sevilen tarifleri ve geleneksel lezzetleri.</p>
-            </div>
+            <motion.div 
+              className="grid grid-cols-1 md:grid-cols-3 gap-8"
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+            >
+              {popularRecipes.map((recipe) => (
+                <motion.div key={recipe.id} variants={itemVariants}>
+                  <RecipeCard 
+                    recipe={recipe} 
+                    categorySlug={recipe.categorySlug} 
+                  />
+                </motion.div>
+              ))}
+            </motion.div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+            <div className="text-center mt-12">
+              <a 
+                href="/populer" 
+                className="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors"
+              >
+                Tüm Popüler Tarifleri Gör
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Püf Noktaları</h3>
-              <p className="text-gray-600">Profesyonellerden öğrendiğimiz püf noktaları ve kolay çözümler.</p>
+              </a>
             </div>
           </div>
         </section>
         
-        <section className="bg-indigo-50 py-16">
+        {/* Features Section */}
+        <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold text-indigo-800 mb-8">Sık Sorulan Sorular</h2>
-            <div className="max-w-3xl mx-auto text-left space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Tarifleriniz nasıl hazırlanıyor?</h3>
-                <p className="text-gray-600">Tüm tariflerimiz alanında uzman şefler tarafından test edilerek hazırlanmaktadır. Her tarif, ev mutfağında kolayca uygulanabilir olması için özenle düzenlenmektedir.</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Farklı beslenme ihtiyaçlarına uygun tarifler var mı?</h3>
-                <p className="text-gray-600">Evet, vejetaryen, vegan, glütensiz ve düşük kalorili tarif kategorilerimiz de bulunmaktadır. Her damak zevkine ve beslenme tercihine uygun tarifler sunmaya çalışıyoruz.</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Tariflerin malzemeleri bulamazsam ne yapabilirim?</h3>
-                <p className="text-gray-600">Her tarifimizin altında alternatif malzemeler ve öneriler sunuyoruz. Ayrıca, iletişim bölümünden bize ulaşarak spesifik tarifler için yardım alabilirsiniz.</p>
-              </div>
+            <div className="text-center mb-16">
+              <span className="text-indigo-600 text-sm font-semibold tracking-wider uppercase">ÖZELLİKLER</span>
+              <h2 className="text-4xl font-bold text-gray-800 mt-2 mb-4">Mutfakta Profesyonel Ol</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Lezzet Dünyası ile ev yemeklerinde profesyonel dokunuşlar. 
+                Detaylı tarifler, püf noktaları ve geleneksel Türk lezzetleri 
+                sizleri bekliyor.
+              </p>
             </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <motion.div 
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                whileHover={{ y: -10 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Detaylı Tarifler</h3>
+                <p className="text-gray-600">Adım adım anlatımlı, ölçülü ve detaylı tarifler.</p>
+              </motion.div>
+              
+              <motion.div 
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                whileHover={{ y: -10 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+              >
+                <div className="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Geleneksel Tatlar</h3>
+                <p className="text-gray-600">Türk mutfağının en sevilen tarifleri ve geleneksel lezzetleri.</p>
+              </motion.div>
+              
+              <motion.div 
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                whileHover={{ y: -10 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <div className="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Püf Noktaları</h3>
+                <p className="text-gray-600">Profesyonellerden öğrendiğimiz püf noktaları ve kolay çözümler.</p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+        
+        {/* FAQ Section */}
+        <section className="bg-indigo-50 py-20">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <span className="text-indigo-600 text-sm font-semibold tracking-wider uppercase">YARDIM</span>
+              <h2 className="text-4xl font-bold text-gray-800 mt-2 mb-4">Sık Sorulan Sorular</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Kullanıcılarımızın en çok merak ettiği sorular ve yanıtları
+              </p>
+            </div>
+            
+            <div className="max-w-3xl mx-auto space-y-6">
+              {[1, 2, 3].map((item, index) => (
+                <motion.div 
+                  key={index}
+                  className="bg-white p-6 rounded-xl shadow-md"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                    {index === 0 && "Tarifleriniz nasıl hazırlanıyor?"}
+                    {index === 1 && "Farklı beslenme ihtiyaçlarına uygun tarifler var mı?"}
+                    {index === 2 && "Tariflerin malzemeleri bulamazsam ne yapabilirim?"}
+                  </h3>
+                  <p className="text-gray-600">
+                    {index === 0 && "Tüm tariflerimiz alanında uzman şefler tarafından test edilerek hazırlanmaktadır. Her tarif, ev mutfağında kolayca uygulanabilir olması için özenle düzenlenmektedir."}
+                    {index === 1 && "Evet, vejetaryen, vegan, glütensiz ve düşük kalorili tarif kategorilerimiz de bulunmaktadır. Her damak zevkine ve beslenme tercihine uygun tarifler sunmaya çalışıyoruz."}
+                    {index === 2 && "Her tarifimizin altında alternatif malzemeler ve öneriler sunuyoruz. Ayrıca, iletişim bölümünden bize ulaşarak spesifik tarifler için yardım alabilirsiniz."}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+        
+        {/* Call to Action Section */}
+        <section className="py-20 bg-gradient-to-r from-indigo-700 to-purple-700 text-white">
+          <div className="max-w-7xl mx-auto px-4 text-center">
+            <h2 className="text-4xl font-bold mb-6">Lezzet Yolculuğuna Hazır mısınız?</h2>
+            <p className="text-xl mb-10 max-w-3xl mx-auto opacity-90">
+              Geleneksel Türk mutfağının zengin lezzetleri sizi bekliyor. Hemen kaydolun ve size özel tarifleri keşfedin.
+            </p>
+            <a 
+              href="/uye-ol" 
+              className="inline-block px-8 py-4 bg-white text-indigo-700 rounded-full font-bold text-lg shadow-xl hover:bg-gray-100 transition-colors hover:shadow-2xl"
+            >
+              Ücretsiz Hesap Oluştur
+            </a>
           </div>
         </section>
       </main>

@@ -217,5 +217,259 @@
         ]
       }
     ]
+  },
+  {
+    "id": "5",
+    "category": "mezeler",
+    "categoryName": "Mezeler",
+    "recipes": [
+      {
+        "id": "501",
+        "title": "Humus",
+        "description": "Nohut püresi ile yapılan Orta Doğu mezesi",
+        "image": "/images/humus.jpg",
+        "prepTime": "15 dakika",
+        "cookTime": "0 dakika",
+        "difficulty": "Kolay",
+        "servings": 6,
+        "ingredients": [
+          "2 su bardağı haşlanmış nohut",
+          "2 diş sarımsak",
+          "3 yemek kaşığı tahin",
+          "1 adet limon suyu",
+          "3 yemek kaşığı zeytinyağı",
+          "1 tatlı kaşığı kimyon",
+          "Tuz",
+          "Pul biber ve maydanoz (süslemek için)"
+        ],
+        "instructions": [
+          "Nohutları robottan geçirin.",
+          "Sarımsak, tahin, limon suyu, zeytinyağı, kimyon ve tuzu ekleyin.",
+          "Tüm malzemeleri robottan tekrar geçirin.",
+          "Kıvamı koyu ise biraz su ekleyerek tekrar karıştırın.",
+          "Servis tabağına alıp üzerine zeytinyağı gezdirip pul biber ve maydanoz ile süsleyin."
+        ]
+      },
+      {
+        "id": "502",
+        "title": "Patlıcan Ezme",
+        "description": "Közlenmiş patlıcan ile yapılan geleneksel meze",
+        "image": "/images/patlican-ezme.jpg",
+        "prepTime": "20 dakika",
+        "cookTime": "15 dakika",
+        "difficulty": "Orta",
+        "servings": 6,
+        "ingredients": [
+          "3 adet patlıcan",
+          "2 diş sarımsak",
+          "1/2 demet maydanoz",
+          "2 yemek kaşığı zeytinyağı",
+          "1 adet limon suyu",
+          "Tuz, karabiber"
+        ],
+        "instructions": [
+          "Patlıcanları közleyin ve kabuklarını soyun.",
+          "Közlenmiş patlıcanları bıçakla küçük küçük doğrayın.",
+          "Sarımsağı ezin ve patlıcana ekleyin.",
+          "Maydanozu ince kıyın ve karışıma ekleyin.",
+          "Zeytinyağı, limon suyu, tuz ve karabiber ekleyip karıştırın.",
+          "Servis tabağına alıp üzerine zeytinyağı gezdirin."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "category": "hamur-isleri",
+    "categoryName": "Hamur İşleri",
+    "recipes": [
+      {
+        "id": "601",
+        "title": "Poğaça",
+        "description": "Yumuşak ve lezzetli Türk poğaçası",
+        "image": "/images/pogaca.jpg",
+        "prepTime": "30 dakika",
+        "cookTime": "25 dakika",
+        "difficulty": "Orta",
+        "servings": 12,
+        "ingredients": [
+          "4 su bardağı un",
+          "1 su bardağı ılık süt",
+          "125g tereyağı (oda sıcaklığında)",
+          "1 paket instant maya",
+          "1 adet yumurta",
+          "1 tatlı kaşığı tuz",
+          "1 tatlı kaşığı şeker",
+          "Peynir veya patates (iç malzeme için)",
+          "1 adet yumurta sarısı (üzeri için)",
+          "Çörek otu, susam (süslemek için)"
+        ],
+        "instructions": [
+          "Unu geniş bir kaba alın ve ortasını açın.",
+          "Ilık sütü, mayayı, şekeri ekleyip karıştırın.",
+          "Tereyağını, yumurtayı ve tuzu ekleyip yumuşak bir hamur elde edin.",
+          "Hamuru üzerini kapatıp 1 saat dinlendirin.",
+          "Hamurdan ceviz büyüklüğünde parçalar koparıp içlerine peynir veya patates doldurun.",
+          "Yağlı kağıt serilmiş tepsiye dizin ve üzerine yumurta sarısı sürün.",
+          "Üzerlerine çörek otu ve susam serpin.",
+          "180 derece fırında 25 dakika pişirin."
+        ]
+      },
+      {
+        "id": "602",
+        "title": "Su Böreği",
+        "description": "Kat kat lezzet: Geleneksel su böreği",
+        "image": "/images/su-boregi.jpg",
+        "prepTime": "60 dakika",
+        "cookTime": "40 dakika",
+        "difficulty": "Zor",
+        "servings": 8,
+        "ingredients": [
+          "500g yufka",
+          "300g beyaz peynir",
+          "1/2 demet maydanoz",
+          "3 yemek kaşığı zeytinyağı",
+          "Tuz, karabiber",
+          "1 tencere kaynar su"
+        ],
+        "instructions": [
+          "Peyniri ezin, maydanozu kıyın ve karıştırın.",
+          "Yufkaları tezgaha serin.",
+          "Her bir yufkayı kaynar suda haşlayıp çıkarın ve süzün.",
+          "Yağlanmış tepsiye bir kat yufka serin ve üzerine yağ gezdirin.",
+          "3-4 kat yufka serdikten sonra hazırladığınız peynirli harcı yayın.",
+          "Kalan yufkaları aynı şekilde haşlayıp, yağlayarak tepsiye dizin.",
+          "180 derece fırında altı üstü kızarana kadar pişirin."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "category": "kahvaltiliklar",
+    "categoryName": "Kahvaltılıklar",
+    "recipes": [
+      {
+        "id": "701",
+        "title": "Menemen",
+        "description": "Domates, biber ve yumurta ile hazırlanan klasik Türk kahvaltılığı",
+        "image": "/images/menemen.jpg",
+        "prepTime": "10 dakika",
+        "cookTime": "15 dakika",
+        "difficulty": "Kolay",
+        "servings": 2,
+        "ingredients": [
+          "4 adet domates",
+          "2 adet yeşil biber",
+          "1 adet soğan",
+          "3 adet yumurta",
+          "2 yemek kaşığı zeytinyağı",
+          "Tuz, karabiber, pul biber",
+          "Maydanoz (isteğe bağlı)"
+        ],
+        "instructions": [
+          "Soğanı ve biberi küçük küçük doğrayın.",
+          "Zeytinyağında soğanları pembeleşene kadar kavurun.",
+          "Biberleri ekleyip kavurmaya devam edin.",
+          "Domatesleri küp küp doğrayıp ekleyin ve suyunu çekene kadar pişirin.",
+          "Tuz ve baharatları ekleyin.",
+          "Üzerine yumurtaları kırın ve karıştırmadan pişirin.",
+          "İsteğe bağlı olarak üzerine kıyılmış maydanoz serpin."
+        ]
+      },
+      {
+        "id": "702",
+        "title": "Simit",
+        "description": "Susamlı, gevrek Türk gevreği",
+        "image": "/images/simit.jpg",
+        "prepTime": "30 dakika",
+        "cookTime": "25 dakika",
+        "difficulty": "Orta",
+        "servings": 8,
+        "ingredients": [
+          "4 su bardağı un",
+          "1 paket instant maya",
+          "1.5 su bardağı ılık su",
+          "1 tatlı kaşığı tuz",
+          "1 tatlı kaşığı şeker",
+          "3 yemek kaşığı üzüm pekmezi",
+          "1/2 su bardağı su (pekmez suyu için)",
+          "1 su bardağı susam"
+        ],
+        "instructions": [
+          "Un, maya, tuz ve şekeri karıştırın.",
+          "Yavaş yavaş su ekleyerek yumuşak bir hamur elde edin.",
+          "Hamuru 30 dakika dinlendirin.",
+          "Hamurdan 8 eşit parça koparın ve her birini uzun bir silindir haline getirin.",
+          "İki silindiri birbirine yapıştırıp halka şeklinde bükün.",
+          "Pekmezi su ile karıştırın.",
+          "Simitleri pekmezli suya batırıp susama bulayın.",
+          "180 derece fırında 25 dakika pişirin."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "category": "atistirmaliklar",
+    "categoryName": "Atıştırmalıklar",
+    "recipes": [
+      {
+        "id": "801",
+        "title": "Patates Kızartması",
+        "description": "Ev yapımı çıtır patates kızartması",
+        "image": "/images/patates-kizartmasi.jpg",
+        "prepTime": "10 dakika",
+        "cookTime": "15 dakika",
+        "difficulty": "Kolay",
+        "servings": 4,
+        "ingredients": [
+          "6 adet orta boy patates",
+          "Kızartmak için sıvı yağ",
+          "Tuz",
+          "İsteğe bağlı baharatlar (kekik, pul biber, vb.)"
+        ],
+        "instructions": [
+          "Patatesleri soyun ve çubuk şeklinde kesin.",
+          "Kesilen patatesleri soğuk suda 30 dakika bekletin.",
+          "Patatesleri sudan çıkarıp kağıt havlu ile iyice kurulayın.",
+          "Derin bir tavada yağı ısıtın.",
+          "Patatesleri kızgın yağda altın sarısı renk alana kadar kızartın.",
+          "Kızaran patatesleri havlu kağıt serilmiş tabağa alın.",
+          "Sıcakken tuz ve isteğe bağlı baharatları ekleyin."
+        ]
+      },
+      {
+        "id": "802",
+        "title": "Çiğ Köfte",
+        "description": "Etsiz, baharatlı bulgur köftesi",
+        "image": "/images/cig-kofte.jpg",
+        "prepTime": "40 dakika",
+        "cookTime": "0 dakika",
+        "difficulty": "Orta",
+        "servings": 6,
+        "ingredients": [
+          "2 su bardağı ince bulgur",
+          "1 su bardağı ince doğranmış soğan",
+          "3 diş sarımsak",
+          "2 yemek kaşığı biber salçası",
+          "1 yemek kaşığı domates salçası",
+          "1/2 demet maydanoz",
+          "1 adet limon suyu",
+          "2 yemek kaşığı zeytinyağı",
+          "Tuz, karabiber, kimyon, pul biber"
+        ],
+        "instructions": [
+          "Bulguru geniş bir kaba alın ve üzerini hafifçe geçecek kadar su ekleyin.",
+          "Bulgur suyu çekene kadar bekletin.",
+          "Soğanı ve sarımsağı rondodan geçirin.",
+          "Salçaları, zeytinyağını ve baharatları ekleyip iyice yoğurun.",
+          "Karışımı bulgura ekleyin ve yoğurmaya devam edin.",
+          "İnce kıyılmış maydanozu ve limon suyunu ekleyin.",
+          "Hamur kıvam alana kadar yoğurun.",
+          "Köfteleri şekillendirip marul yaprakları ile servis yapın."
+        ]
+      }
+    ]
   }
 ] 
