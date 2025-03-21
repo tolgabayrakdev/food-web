@@ -15,8 +15,8 @@ export default function CategoriesPage() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <main className="flex-grow bg-red-50">
-        <div className="bg-red-700 py-16 px-4">
+      <main className="flex-grow bg-rose-50">
+        <div className="bg-rose-700 py-16 px-4">
           <div className="max-w-7xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Yemek Kategorileri</h1>
             <p className="text-lg md:text-xl max-w-3xl mx-auto">
