@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CategoryCard from "@/components/CategoryCard";
 import { getAllCategories } from "@/lib/recipes";
-import { motion } from "framer-motion";
 
 export const metadata = {
   title: "Kategoriler - Lezzet Dünyası",
@@ -11,22 +10,6 @@ export const metadata = {
 
 export default function CategoriesPage() {
   const categories = getAllCategories();
-
-  // Animation variants for staggered animations
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-  };
   
   return (
     <div className="min-h-screen flex flex-col">
@@ -36,32 +19,17 @@ export default function CategoriesPage() {
         {/* Hero Banner */}
         <div className="bg-gradient-to-r from-indigo-800 to-indigo-600 py-20 px-4">
           <div className="max-w-7xl mx-auto text-center text-white">
-            <motion.span
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-block px-4 py-1 bg-white/10 rounded-full text-sm font-medium mb-6"
-            >
+            <span className="inline-block px-4 py-1 bg-white/10 rounded-full text-sm font-medium mb-6">
               KATEGORİLER
-            </motion.span>
-            <motion.h1 
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-4xl md:text-6xl font-bold mb-6"
-            >
+            </span>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Yemek Kategorileri
-            </motion.h1>
-            <motion.p 
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-lg md:text-xl max-w-3xl mx-auto text-indigo-100"
-            >
+            </h1>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto text-indigo-100">
               Türk mutfağının eşsiz kategorilerini keşfedin. Ana yemeklerden tatlılara, 
               çorbalardan salatalara kadar tüm lezzetler burada. Damak zevkinize göre size 
               uygun tarifleri bulun ve mutfakta harikalar yaratın.
-            </motion.p>
+            </p>
           </div>
         </div>
         
@@ -89,14 +57,9 @@ export default function CategoriesPage() {
         
         {/* Categories Grid */}
         <div className="max-w-7xl mx-auto px-4 py-16">
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {categories.map((category) => (
-              <motion.div key={category.id} variants={itemVariants}>
+              <div key={category.id}>
                 <CategoryCard category={category} />
                 <div className="mt-4 px-2">
                   <h3 className="text-xl font-semibold text-gray-800">{category.categoryName}</h3>
@@ -112,9 +75,9 @@ export default function CategoriesPage() {
                     </span>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
         
         {/* Newsletter Section */}
