@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-orange-700 text-white">
+    <footer className="bg-indigo-700 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="mt-8 pt-6 border-t border-orange-600 text-center text-sm opacity-80">
+        <div className="mt-8 pt-6 border-t border-indigo-600 text-center text-sm opacity-80">
           <p>© {new Date().getFullYear()} Lezzet Dünyası. Tüm hakları saklıdır.</p>
         </div>
       </div>
