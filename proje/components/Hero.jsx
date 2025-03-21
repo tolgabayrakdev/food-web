@@ -21,13 +21,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4">
           <Link 
             href="/kategoriler" 
-            className="bg-red-600 text-white px-8 py-3 rounded-md font-medium text-lg hover:bg-red-700 transition-colors"
+            className="bg-rose-600 text-white px-8 py-3 rounded-md font-medium text-lg hover:bg-rose-700 transition-colors"
           >
             Tarifleri Keşfet
           </Link>
           <Link 
             href="/populer" 
-            className="bg-white text-red-800 px-8 py-3 rounded-md font-medium text-lg hover:bg-gray-100 transition-colors"
+            className="bg-white text-rose-800 px-8 py-3 rounded-md font-medium text-lg hover:bg-gray-100 transition-colors"
           >
             Popüler Tarifler
           </Link>

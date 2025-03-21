@@ -26,8 +26,8 @@ export default function SearchPage() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <main className="flex-grow bg-amber-50">
-        <div className="bg-amber-700 py-16 px-4">
+      <main className="flex-grow bg-rose-50">
+        <div className="bg-rose-700 py-16 px-4">
           <div className="max-w-7xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-8">Tarif Ara</h1>
             <SearchBar />
@@ -37,7 +37,7 @@ export default function SearchPage() {
         <div className="max-w-7xl mx-auto px-4 py-16">
           {query ? (
             <>
-              <h2 className="text-2xl font-bold text-amber-800 mb-6">
+              <h2 className="text-2xl font-bold text-rose-800 mb-6">
                 "{query}" için arama sonuçları
               </h2>
               
@@ -53,7 +53,7 @@ export default function SearchPage() {
                 </div>
               ) : (
                 <div className="text-center py-16">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mx-auto text-amber-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mx-auto text-rose-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">Üzgünüz, tarif bulunamadı</h3>
@@ -65,7 +65,7 @@ export default function SearchPage() {
             </>
           ) : (
             <div className="text-center py-16">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mx-auto text-amber-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mx-auto text-rose-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Bir tarif arayın</h3>

@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-red-600 shadow-md sticky top-0 z-50">
+    <nav className="bg-rose-600 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -23,25 +23,25 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-4">
             <Link 
               href="/" 
-              className="text-white hover:bg-red-700 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-white hover:bg-rose-700 px-3 py-2 rounded-md text-sm font-medium"
             >
               Ana Sayfa
             </Link>
             <Link 
               href="/kategoriler" 
-              className="text-white hover:bg-red-700 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-white hover:bg-rose-700 px-3 py-2 rounded-md text-sm font-medium"
             >
               Kategoriler
             </Link>
             <Link 
               href="/populer" 
-              className="text-white hover:bg-red-700 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-white hover:bg-rose-700 px-3 py-2 rounded-md text-sm font-medium"
             >
               Popüler Tarifler
             </Link>
             <Link 
               href="/hakkimizda" 
-              className="text-white hover:bg-red-700 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-white hover:bg-rose-700 px-3 py-2 rounded-md text-sm font-medium"
             >
               Hakkımızda
             </Link>
@@ -50,7 +50,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMobileMenu}
-              className="text-white hover:bg-red-700 p-2 rounded-md"
+              className="text-white hover:bg-rose-700 p-2 rounded-md"
             >
               <svg
                 className="h-6 w-6"
@@ -82,28 +82,28 @@ export default function Navbar() {
       
       {isMobileMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-red-600">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-rose-600">
             <Link
               href="/"
-              className="text-white hover:bg-red-700 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-white hover:bg-rose-700 block px-3 py-2 rounded-md text-base font-medium"
             >
               Ana Sayfa
             </Link>
             <Link
               href="/kategoriler"
-              className="text-white hover:bg-red-700 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-white hover:bg-rose-700 block px-3 py-2 rounded-md text-base font-medium"
             >
               Kategoriler
             </Link>
             <Link
               href="/populer"
-              className="text-white hover:bg-red-700 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-white hover:bg-rose-700 block px-3 py-2 rounded-md text-base font-medium"
             >
               Popüler Tarifler
             </Link>
             <Link
               href="/hakkimizda"
-              className="text-white hover:bg-red-700 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-white hover:bg-rose-700 block px-3 py-2 rounded-md text-base font-medium"
             >
               Hakkımızda
             </Link>

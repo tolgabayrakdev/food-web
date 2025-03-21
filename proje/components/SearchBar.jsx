@@ -25,11 +25,11 @@ export default function SearchBar() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Tarif ara..."
-          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent"
         />
         <button
           type="submit"
-          className="absolute right-2 p-2 text-red-600 hover:text-red-800 transition-colors"
+          className="absolute right-2 p-2 text-rose-600 hover:text-rose-800 transition-colors"
           aria-label="Ara"
         >
           <svg 

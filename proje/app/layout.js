@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
     <html lang="tr" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="theme-color" content="#ef4444" />
+        <meta name="theme-color" content="#f43f5e" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
