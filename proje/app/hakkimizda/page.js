@@ -2,15 +2,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Hakkımızda - Lezzet Dünyası",
-  description: "Lezzet Dünyası kimdir? Türk mutfağına tutkumuz ve misyonumuz hakkında bilgi edinin. En iyi yemek tariflerini ve püf noktalarını sizlerle paylaşıyoruz.",
-  keywords: "türk mutfağı, lezzet dünyası, hakkımızda, yemek platformu, türk yemekleri, yemek tarifleri ekibi",
+  title: "Hakkımızda - Lezzet Hazinesi",
+  description: "Lezzet Hazinesi kimdir? Türk mutfağına tutkumuz ve misyonumuz hakkında bilgi edinin. En iyi yemek tariflerini ve püf noktalarını sizlerle paylaşıyoruz.",
+  keywords: "türk mutfağı, lezzet hazinesi, hakkımızda, yemek platformu, türk yemekleri, yemek tarifleri ekibi",
   alternates: {
     canonical: "https://lezzetdunyasi.com/hakkimizda",
   },
   openGraph: {
-    title: "Hakkımızda - Lezzet Dünyası",
-    description: "Lezzet Dünyası kimdir? Türk mutfağına tutkumuz ve misyonumuz hakkında bilgi edinin.",
+    title: "Hakkımızda - Lezzet Hazinesi",
+    description: "Lezzet Hazinesi kimdir? Türk mutfağına tutkumuz ve misyonumuz hakkında bilgi edinin.",
     url: "https://lezzetdunyasi.com/hakkimizda",
   }
 };
@@ -25,7 +25,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Hakkımızda</h1>
             <p className="text-lg md:text-xl max-w-3xl mx-auto">
-              Lezzet Dünyası'nın hikayesi ve Türk mutfağına olan tutkumuz.
+              Lezzet Hazinesi'nın hikayesi ve Türk mutfağına olan tutkumuz.
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function AboutPage() {
           <div className="bg-white rounded-lg shadow-md p-8">
             <h2 className="text-3xl font-bold text-indigo-800 mb-6">Biz Kimiz?</h2>
             <p className="text-gray-700 mb-6">
-              Lezzet Dünyası, Türk mutfağının zengin lezzetlerini ve geleneksel tariflerini 
+              Lezzet Hazinesi, Türk mutfağının zengin lezzetlerini ve geleneksel tariflerini 
               herkes için erişilebilir kılmak amacıyla kurulmuş bir yemek platformudur. 
               2023 yılında kurulan sitemiz, Türk mutfağının eşsiz tatlarını, püf noktalarını ve 
               geleneksel yöntemlerini modern bir yaklaşımla sunmayı hedeflemektedir.
@@ -56,7 +56,7 @@ export default function AboutPage() {
             
             <h2 className="text-3xl font-bold text-indigo-800 mb-6 mt-12">Ekibimiz</h2>
             <p className="text-gray-700 mb-6">
-              Lezzet Dünyası ekibi, yemek tutkunu ve mutfakta deneyimli kişilerden oluşmaktadır. 
+              Lezzet Hazinesi ekibi, yemek tutkunu ve mutfakta deneyimli kişilerden oluşmaktadır. 
               Profesyonel şeflerden ev hanımlarına, gıda mühendislerinden yazılım geliştiricilere 
               kadar geniş bir yelpazede uzmanlara sahip ekibimiz, size en doğru ve kaliteli içerikleri 
               sunmak için çalışmaktadır.

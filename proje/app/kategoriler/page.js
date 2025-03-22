@@ -4,7 +4,7 @@ import CategoryCard from "@/components/CategoryCard";
 import { getAllCategories } from "@/lib/recipes";
 
 export const metadata = {
-  title: "Kategoriler - Lezzet Dünyası",
+  title: "Kategoriler - Lezzet Hazinesi",
   description: "Türk mutfağının en lezzetli yemek tariflerini kategori kategoriye keşfedin.",
 };
 

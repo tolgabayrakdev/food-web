@@ -14,16 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://lezzetdunyasi.com'),
+  metadataBase: new URL('https://lezzethazinesi.com'),
   title: {
-    default: "Lezzet Dünyası - Türk Mutfağı",
-    template: "%s | Lezzet Dünyası"
+    default: "Lezzet Hazinesi - Türk Mutfağı",
+    template: "%s | Lezzet Hazinesi"
   },
   description: "En lezzetli yemek tarifleri ve geleneksel Türk mutfağının en seçkin tatları",
   keywords: ["türk mutfağı", "yemek tarifleri", "ev yemekleri", "lezzetli tarifler"],
-  authors: [{ name: "Lezzet Dünyası Ekibi" }],
-  creator: "Lezzet Dünyası",
-  publisher: "Lezzet Dünyası",
+  authors: [{ name: "Lezzet Hazinesi Ekibi" }],
+  creator: "Lezzet Hazinesi",
+  publisher: "Lezzet Hazinesi",
   formatDetection: {
     email: false,
     address: false,
@@ -32,25 +32,25 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://lezzetdunyasi.com",
-    siteName: "Lezzet Dünyası",
-    title: "Lezzet Dünyası - Türk Mutfağı",
+    url: "https://lezzethazinesi.com",
+    siteName: "Lezzet Hazinesi",
+    title: "Lezzet Hazinesi - Türk Mutfağı",
     description: "En lezzetli yemek tarifleri ve geleneksel Türk mutfağının en seçkin tatları",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Lezzet Dünyası",
+        alt: "Lezzet Hazinesi",
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lezzet Dünyası - Türk Mutfağı",
+    title: "Lezzet Hazinesi - Türk Mutfağı",
     description: "En lezzetli yemek tarifleri ve geleneksel Türk mutfağının en seçkin tatları",
     images: ["/images/og-image.jpg"],
-    creator: "@lezzetdunyasi"
+    creator: "@lezzethazinesi"
   },
   robots: {
     index: true,
@@ -63,9 +63,9 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: "https://lezzetdunyasi.com",
+    canonical: "https://lezzethazinesi.com",
     languages: {
-      'tr-TR': "https://lezzetdunyasi.com",
+      'tr-TR': "https://lezzethazinesi.com",
     },
   },
 };

@@ -10,12 +10,12 @@ export async function generateMetadata({ params }) {
   
   if (!category) {
     return {
-      title: "Kategori Bulunamadı - Lezzet Dünyası",
+      title: "Kategori Bulunamadı - Lezzet Hazinesi",
     };
   }
   
   return {
-    title: `${category.categoryName} - Lezzet Dünyası`,
+    title: `${category.categoryName} - Lezzet Hazinesi`,
     description: `${category.categoryName} kategorisindeki en lezzetli tarifler ve yemekler.`,
   };
 }

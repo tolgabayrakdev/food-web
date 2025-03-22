@@ -12,12 +12,12 @@ export async function generateMetadata({ params }) {
   
   if (!recipe) {
     return {
-      title: "Tarif Bulunamadı - Lezzet Dünyası",
+      title: "Tarif Bulunamadı - Lezzet Hazinesi",
     };
   }
   
   return {
-    title: `${recipe.title} - Lezzet Dünyası`,
+    title: `${recipe.title} - Lezzet Hazinesi`,
     description: recipe.description,
   };
 }
