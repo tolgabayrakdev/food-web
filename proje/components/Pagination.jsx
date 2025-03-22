@@ -1,8 +1,10 @@
 "use client";
 
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function Pagination({ totalPages, currentPage }) {
+// Client component that uses useSearchParams
+function PaginationContent({ totalPages, currentPage }) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -124,5 +126,23 @@ export default function Pagination({ totalPages, currentPage }) {
         </button>
       </nav>
     </div>
+  );
+}
+
+// Fallback component for loading state
+function PaginationFallback() {
+  return (
+    <div className="flex items-center justify-center my-8">
+      <div className="h-10 w-64 bg-gray-200 rounded-md animate-pulse"></div>
+    </div>
+  );
+}
+
+// Main component with Suspense boundary
+export default function Pagination(props) {
+  return (
+    <Suspense fallback={<PaginationFallback />}>
+      <PaginationContent {...props} />
+    </Suspense>
   );
 } 

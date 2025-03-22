@@ -1,8 +1,10 @@
 "use client";
 
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function CategoryFilter({ categories, selectedCategory }) {
+// Client component that uses useSearchParams
+function CategoryFilterContent({ categories, selectedCategory }) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -52,5 +54,28 @@ export default function CategoryFilter({ categories, selectedCategory }) {
         ))}
       </div>
     </div>
+  );
+}
+
+// Fallback component for loading state
+function CategoryFilterFallback() {
+  return (
+    <div className="mb-8">
+      <div className="h-6 w-32 bg-gray-200 rounded animate-pulse mb-4"></div>
+      <div className="flex flex-wrap gap-2">
+        <div className="h-10 w-20 bg-gray-200 rounded-full animate-pulse"></div>
+        <div className="h-10 w-24 bg-gray-200 rounded-full animate-pulse"></div>
+        <div className="h-10 w-28 bg-gray-200 rounded-full animate-pulse"></div>
+      </div>
+    </div>
+  );
+}
+
+// Main component with Suspense boundary
+export default function CategoryFilter(props) {
+  return (
+    <Suspense fallback={<CategoryFilterFallback />}>
+      <CategoryFilterContent {...props} />
+    </Suspense>
   );
 } 

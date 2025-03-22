@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
-export default function SearchBar() {
+// Client component that uses useSearchParams
+function SearchBarContent() {
   const [query, setQuery] = useState("");
   const router = useRouter();
   const pathname = usePathname();
@@ -75,5 +76,25 @@ export default function SearchBar() {
         </button>
       </div>
     </form>
+  );
+}
+
+// Fallback component for loading state
+function SearchBarFallback() {
+  return (
+    <div className="max-w-xl mx-auto w-full">
+      <div className="relative flex items-center">
+        <div className="w-full h-12 rounded-lg bg-gray-200 animate-pulse"></div>
+      </div>
+    </div>
+  );
+}
+
+// Main component with Suspense boundary
+export default function SearchBar() {
+  return (
+    <Suspense fallback={<SearchBarFallback />}>
+      <SearchBarContent />
+    </Suspense>
   );
 } 
