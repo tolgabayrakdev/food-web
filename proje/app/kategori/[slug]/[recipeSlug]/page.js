@@ -5,8 +5,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { getRecipeBySlug, getCategoryBySlug, getAllCategories, createRecipeSlug } from "@/lib/recipes";
 
-export function generateMetadata({ params }) {
-  const recipe = getRecipeBySlug(params.slug, params.recipeSlug);
+export async function generateMetadata({ params }) {
+  const { slug, recipeSlug } = await params;
+  
+  const recipe = getRecipeBySlug(slug, recipeSlug);
   
   if (!recipe) {
     return {
@@ -31,9 +33,11 @@ export function generateStaticParams() {
   );
 }
 
-export default function RecipePage({ params }) {
-  const recipe = getRecipeBySlug(params.slug, params.recipeSlug);
-  const category = getCategoryBySlug(params.slug);
+export default async function RecipePage({ params }) {
+  const { slug } = await params;
+  const { recipeSlug } = await params;
+  const recipe = getRecipeBySlug(slug, recipeSlug);
+  const category = getCategoryBySlug(slug);
   
   if (!recipe || !category) {
     notFound();
@@ -56,7 +60,7 @@ export default function RecipePage({ params }) {
           <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
             <div className="max-w-7xl mx-auto">
               <Link 
-                href={`/kategori/${params.slug}`}
+                href={`/kategori/${slug}`}
                 className="text-indigo-300 hover:underline mb-4 inline-block"
               >
                 ← {category.categoryName}

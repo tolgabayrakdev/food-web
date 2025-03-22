@@ -4,8 +4,9 @@ import Footer from "@/components/Footer";
 import RecipeCard from "@/components/RecipeCard";
 import { getCategoryBySlug, getAllCategories } from "@/lib/recipes";
 
-export function generateMetadata({ params }) {
-  const category = getCategoryBySlug(params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const category = getCategoryBySlug(slug);
   
   if (!category) {
     return {
@@ -27,8 +28,9 @@ export function generateStaticParams() {
   }));
 }
 
-export default function CategoryPage({ params }) {
-  const category = getCategoryBySlug(params.slug);
+export default async function CategoryPage({ params }) {
+  const { slug } = await params;
+  const category = getCategoryBySlug(slug);
   
   if (!category) {
     notFound();
