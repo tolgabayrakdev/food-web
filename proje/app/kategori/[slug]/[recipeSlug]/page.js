@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
   }
   
   return {
-    title: `${recipe.title} - Lezzet Hazinesi`,
+    title: `${recipe.name} - Lezzet Hazinesi`,
     description: recipe.description,
   };
 }
@@ -50,8 +50,8 @@ export default async function RecipePage({ params }) {
       <main className="flex-grow bg-indigo-50">
         <div className="relative h-[40vh] lg:h-[60vh] w-full">
           <Image
-            src={recipe.image || "/images/placeholder-food.jpg"}
-            alt={recipe.title}
+            src={recipe.image[0] || "/images/placeholder-food.jpg"}
+            alt={recipe.name}
             fill
             className="object-cover"
             priority
@@ -65,7 +65,7 @@ export default async function RecipePage({ params }) {
               >
                 ← {category.categoryName}
               </Link>
-              <h1 className="text-4xl md:text-5xl font-bold mb-2">{recipe.title}</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-2">{recipe.name}</h1>
               <p className="text-xl md:text-2xl opacity-90">{recipe.description}</p>
               
               <div className="flex flex-wrap items-center gap-4 mt-4">
@@ -73,23 +73,20 @@ export default async function RecipePage({ params }) {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span>Hazırlık: {recipe.prepTime}</span>
+                  <span>Hazırlık: {recipe.prepTime.replace('PT', '').replace('M', ' dakika')}</span>
                 </div>
                 <div className="flex items-center mr-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
-                  <span>{recipe.servings} Kişilik</span>
+                  <span>{recipe.recipeYield.replace(' servings', ' Kişilik')}</span>
                 </div>
                 <div className="flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span>Pişirme: {recipe.cookTime}</span>
+                  <span>Pişirme: {recipe.cookTime.replace('PT', '').replace('M', ' dakika')}</span>
                 </div>
-                <span className="px-3 py-1 bg-indigo-600 text-white rounded-full text-sm font-medium">
-                  {recipe.difficulty}
-                </span>
               </div>
             </div>
           </div>
@@ -101,7 +98,7 @@ export default async function RecipePage({ params }) {
               <div className="bg-white rounded-lg shadow-md p-6">
                 <h2 className="text-2xl font-bold mb-6 text-indigo-800 border-b pb-2">Malzemeler</h2>
                 <ul className="space-y-3">
-                  {recipe.ingredients.map((ingredient, index) => (
+                  {recipe.recipeIngredient.map((ingredient, index) => (
                     <li key={index} className="flex items-start">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-indigo-600 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -110,6 +107,12 @@ export default async function RecipePage({ params }) {
                     </li>
                   ))}
                 </ul>
+                {recipe.nutrition && (
+                  <div className="mt-6 pt-6 border-t">
+                    <h3 className="text-lg font-semibold mb-2 text-indigo-800">Besin Değerleri</h3>
+                    <p className="text-gray-600">{recipe.nutrition.calories}</p>
+                  </div>
+                )}
               </div>
             </div>
             
@@ -117,12 +120,15 @@ export default async function RecipePage({ params }) {
               <div className="bg-white rounded-lg shadow-md p-6">
                 <h2 className="text-2xl font-bold mb-6 text-indigo-800 border-b pb-2">Hazırlanışı</h2>
                 <ol className="space-y-6">
-                  {recipe.instructions.map((step, index) => (
+                  {recipe.recipeInstructions.map((step, index) => (
                     <li key={index} className="flex">
                       <div className="bg-indigo-100 text-indigo-800 w-8 h-8 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-0.5">
                         {index + 1}
                       </div>
-                      <div>{step}</div>
+                      <div>
+                        <h3 className="font-semibold mb-1">{step.name}</h3>
+                        <p>{step.text}</p>
+                      </div>
                     </li>
                   ))}
                 </ol>

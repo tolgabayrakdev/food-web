@@ -24,11 +24,17 @@ export function getRecipeBySlug(categorySlug, recipeSlug) {
   const category = getCategoryBySlug(categorySlug);
   if (!category) return null;
   
-  return category.recipes.find(recipe => createRecipeSlug(recipe.title) === recipeSlug);
+  return category.recipes.find(recipe => {
+    // Handle both old (title) and new (name) recipe structures
+    const recipeTitle = recipe.name || recipe.title;
+    return createRecipeSlug(recipeTitle) === recipeSlug;
+  });
 }
 
 // Helper function to convert recipe titles to URL-friendly slugs
 export function createRecipeSlug(title) {
+  if (!title) return '';
+  
   return title
     .toLowerCase()
     .replace(/ı/g, 'i')
@@ -48,7 +54,7 @@ export function getPopularRecipes(limit = 6) {
     category.recipes.slice(0, 1).map(recipe => ({
       ...recipe,
       categorySlug: category.category,
-      slug: createRecipeSlug(recipe.title)
+      slug: createRecipeSlug(recipe.name || recipe.title)
     }))
   ).slice(0, limit);
 }
@@ -60,14 +66,16 @@ export function searchRecipes(query) {
   
   return recipes.flatMap(category => 
     category.recipes
-      .filter(recipe => 
-        recipe.title.toLowerCase().includes(normalizedQuery) || 
-        recipe.description.toLowerCase().includes(normalizedQuery)
-      )
+      .filter(recipe => {
+        const recipeTitle = recipe.name || recipe.title;
+        const recipeDesc = recipe.description || '';
+        return recipeTitle.toLowerCase().includes(normalizedQuery) || 
+               recipeDesc.toLowerCase().includes(normalizedQuery);
+      })
       .map(recipe => ({
         ...recipe,
         categorySlug: category.category,
-        slug: createRecipeSlug(recipe.title)
+        slug: createRecipeSlug(recipe.name || recipe.title)
       }))
   );
 }
@@ -84,7 +92,7 @@ export function getAllRecipes(categorySlug = null) {
       ...recipe,
       categoryName: category.categoryName,
       categorySlug: category.category,
-      slug: createRecipeSlug(recipe.title)
+      slug: createRecipeSlug(recipe.name || recipe.title)
     }));
   });
   

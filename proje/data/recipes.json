@@ -5,15 +5,36 @@
     "categoryName": "Ana Yemekler",
     "recipes": [
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "101",
-        "title": "Karnıyarık",
+        "name": "Karnıyarık",
         "description": "Patlıcan ile yapılan geleneksel Türk yemeği",
-        "image": "/images/karniyarik.jpg",
-        "prepTime": "20 dakika",
-        "cookTime": "40 dakika",
-        "difficulty": "Orta",
-        "servings": 4,
-        "ingredients": [
+        "image": [
+          "/images/karniyarik.jpg"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT20M",
+        "cookTime": "PT40M",
+        "totalTime": "PT60M",
+        "keywords": "karnıyarık, patlıcan, ana yemek",
+        "recipeYield": "4 servings",
+        "recipeCategory": "Ana Yemek",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "350 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.8,
+          "ratingCount": 125
+        },
+        "recipeIngredient": [
           "6 adet patlıcan",
           "300g kıyma",
           "2 adet soğan",
@@ -23,24 +44,65 @@
           "3 yemek kaşığı zeytinyağı",
           "Tuz, karabiber, kırmızı biber"
         ],
-        "instructions": [
-          "Patlıcanları alacalı soyup, tuzlu suda bekletin.",
-          "Kıymayı soğan, sarımsak ve baharatlarla kavurun.",
-          "Domates ve biberleri ekleyip pişirmeye devam edin.",
-          "Patlıcanları kızartın ve ortalarını yarıp iç harcı doldurun.",
-          "200 derece fırında 20-25 dakika pişirin."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Patlıcanları Hazırla",
+            "text": "Patlıcanları alacalı soyup, tuzlu suda bekletin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "İç Harcı Hazırla",
+            "text": "Kıymayı soğan, sarımsak ve baharatlarla kavurun."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Malzemeleri Ekle",
+            "text": "Domates ve biberleri ekleyip pişirmeye devam edin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Patlıcanları Doldur",
+            "text": "Patlıcanları kızartın ve ortalarını yarıp iç harcı doldurun."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Pişir",
+            "text": "200 derece fırında 20-25 dakika pişirin."
+          }
         ]
       },
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "102",
-        "title": "Mantı",
+        "name": "Mantı",
         "description": "Türk mutfağının sevilen hamur işi",
-        "image": "/images/manti.jpg",
-        "prepTime": "60 dakika",
-        "cookTime": "20 dakika",
-        "difficulty": "Zor",
-        "servings": 6,
-        "ingredients": [
+        "image": [
+          "/images/manti.jpg"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT60M",
+        "cookTime": "PT20M",
+        "totalTime": "PT80M",
+        "keywords": "mantı, hamur işi, ana yemek",
+        "recipeYield": "6 servings",
+        "recipeCategory": "Ana Yemek",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "280 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.9,
+          "ratingCount": 98
+        },
+        "recipeIngredient": [
           "3 su bardağı un",
           "1 adet yumurta",
           "250g kıyma",
@@ -50,13 +112,37 @@
           "Tereyağı",
           "Kırmızı biber"
         ],
-        "instructions": [
-          "Unu, yumurtayı, tuzu ve suyu karıştırıp hamur yapın.",
-          "Hamuru dinlendirip ince açın.",
-          "Kıyma, soğan ve baharatları karıştırın.",
-          "Hamuru küçük karelere kesip içine harç koyun ve kapatın.",
-          "Kaynayan tuzlu suda mantıları haşlayın.",
-          "Üzerine sarımsaklı yoğurt ve kırmızı biberli tereyağı gezdirin."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Hamur Hazırla",
+            "text": "Unu, yumurtayı, tuzu ve suyu karıştırıp hamur yapın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Hamuru Dinlendir",
+            "text": "Hamuru dinlendirip ince açın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "İç Harcı Hazırla",
+            "text": "Kıyma, soğan ve baharatları karıştırın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Mantıları Şekillendir",
+            "text": "Hamuru küçük karelere kesip içine harç koyun ve kapatın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Pişir",
+            "text": "Kaynayan tuzlu suda mantıları haşlayın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Servis Et",
+            "text": "Üzerine sarımsaklı yoğurt ve kırmızı biberli tereyağı gezdirin."
+          }
         ]
       }
     ]
@@ -67,15 +153,36 @@
     "categoryName": "Çorbalar",
     "recipes": [
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "201",
-        "title": "Mercimek Çorbası",
+        "name": "Mercimek Çorbası",
         "description": "Klasik Türk mutfağının vazgeçilmez çorbası",
-        "image": "/images/mercimek.jpg",
-        "prepTime": "10 dakika",
-        "cookTime": "40 dakika",
-        "difficulty": "Kolay",
-        "servings": 6,
-        "ingredients": [
+        "image": [
+          "/images/mercimek.jpg"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT10M",
+        "cookTime": "PT40M",
+        "totalTime": "PT50M",
+        "keywords": "mercimek çorbası, çorba, mercimek",
+        "recipeYield": "6 servings",
+        "recipeCategory": "Çorba",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "180 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.7,
+          "ratingCount": 156
+        },
+        "recipeIngredient": [
           "1.5 su bardağı kırmızı mercimek",
           "1 adet soğan",
           "1 adet havuç",
@@ -84,25 +191,70 @@
           "Tuz, karabiber, kırmızı biber",
           "Limon"
         ],
-        "instructions": [
-          "Mercimeği yıkayıp süzün.",
-          "Sebzeleri doğrayıp mercimekle beraber tencereye alın.",
-          "Üzerini geçecek kadar su ekleyip pişirin.",
-          "Mercimek ve sebzeler yumuşayınca blenderdan geçirin.",
-          "Ayrı bir tavada tereyağını eritip kırmızı biberi yakın ve çorbaya ekleyin.",
-          "Servis ederken üzerine limon sıkın."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Mercimeği Hazırla",
+            "text": "Mercimeği yıkayıp süzün."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Sebzeleri Hazırla",
+            "text": "Sebzeleri doğrayıp mercimekle beraber tencereye alın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Pişir",
+            "text": "Üzerini geçecek kadar su ekleyip pişirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Blenderdan Geçir",
+            "text": "Mercimek ve sebzeler yumuşayınca blenderdan geçirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tereyağı Ekle",
+            "text": "Ayrı bir tavada tereyağını eritip kırmızı biberi yakın ve çorbaya ekleyin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Servis Et",
+            "text": "Servis ederken üzerine limon sıkın."
+          }
         ]
       },
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "202",
-        "title": "Ezogelin Çorbası",
+        "name": "Ezogelin Çorbası",
         "description": "Mercimek ve bulgurla hazırlanan lezzetli çorba",
-        "image": "/images/ezogelin.jpg",
-        "prepTime": "15 dakika",
-        "cookTime": "45 dakika",
-        "difficulty": "Orta",
-        "servings": 6,
-        "ingredients": [
+        "image": [
+          "/images/ezogelin.jpg"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT15M",
+        "cookTime": "PT45M",
+        "totalTime": "PT60M",
+        "keywords": "ezogelin çorbası, çorba, mercimek, bulgur",
+        "recipeYield": "6 servings",
+        "recipeCategory": "Çorba",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "200 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.6,
+          "ratingCount": 142
+        },
+        "recipeIngredient": [
           "1 su bardağı kırmızı mercimek",
           "1/4 su bardağı pirinç",
           "1/4 su bardağı bulgur",
@@ -112,13 +264,37 @@
           "Nane, kırmızı biber, karabiber",
           "Tereyağı"
         ],
-        "instructions": [
-          "Soğan ve sarımsağı yağda kavurun.",
-          "Salçayı ekleyip karıştırın.",
-          "Yıkanmış mercimek, pirinç ve bulguru ekleyin.",
-          "Üzerine su ekleyip kaynatın.",
-          "Malzemeler yumuşayınca blenderdan geçirin.",
-          "Üzerine tereyağında kızdırılmış nane ve kırmızı biber ekleyin."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Soğan ve Sarımsak",
+            "text": "Soğan ve sarımsağı yağda kavurun."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Salça Ekle",
+            "text": "Salçayı ekleyip karıştırın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Malzemeleri Ekle",
+            "text": "Yıkanmış mercimek, pirinç ve bulguru ekleyin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Pişir",
+            "text": "Üzerine su ekleyip kaynatın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Blenderdan Geçir",
+            "text": "Malzemeler yumuşayınca blenderdan geçirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Süsle",
+            "text": "Üzerine tereyağında kızdırılmış nane ve kırmızı biber ekleyin."
+          }
         ]
       }
     ]
@@ -129,15 +305,36 @@
     "categoryName": "Tatlılar",
     "recipes": [
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "301",
-        "title": "Baklava",
+        "name": "Baklava",
         "description": "Geleneksel Türk tatlısı",
-        "image": "/images/baklava.jpg",
-        "prepTime": "60 dakika",
-        "cookTime": "45 dakika",
-        "difficulty": "Zor",
-        "servings": 12,
-        "ingredients": [
+        "image": [
+          "/images/baklava.jpg"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT60M",
+        "cookTime": "PT45M",
+        "totalTime": "PT105M",
+        "keywords": "baklava, tatlı, fıstıklı baklava",
+        "recipeYield": "12 servings",
+        "recipeCategory": "Tatlı",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "450 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.9,
+          "ratingCount": 89
+        },
+        "recipeIngredient": [
           "500g yufka",
           "300g tereyağı",
           "300g ceviz içi",
@@ -145,26 +342,75 @@
           "1.5 su bardağı su",
           "1 tatlı kaşığı limon suyu"
         ],
-        "instructions": [
-          "Tereyağını eritin.",
-          "Yufkayı tepsiye yerleştirirken aralarına tereyağı sürün.",
-          "Her 3-4 katta bir ceviz serpin.",
-          "Hazırladığınız baklavaları pişmeden önce dilimleyin.",
-          "180 derece fırında altı üstü kızarana kadar pişirin.",
-          "Şeker ve suyu kaynatıp şerbet hazırlayın ve limon suyunu ekleyin.",
-          "Sıcak baklavaların üzerine soğuk şerbeti dökün."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Tereyağını Hazırla",
+            "text": "Tereyağını eritin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Yufkayı Yerleştir",
+            "text": "Yufkayı tepsiye yerleştirirken aralarına tereyağı sürün."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Ceviz Ekle",
+            "text": "Her 3-4 katta bir ceviz serpin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Dilimle",
+            "text": "Hazırladığınız baklavaları pişmeden önce dilimleyin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Pişir",
+            "text": "180 derece fırında altı üstü kızarana kadar pişirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Şerbet Hazırla",
+            "text": "Şeker ve suyu kaynatıp şerbet hazırlayın ve limon suyunu ekleyin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Şerbeti Dök",
+            "text": "Sıcak baklavaların üzerine soğuk şerbeti dökün."
+          }
         ]
       },
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "302",
-        "title": "Sütlaç",
+        "name": "Sütlaç",
         "description": "Pirinçli süt tatlısı",
-        "image": "/images/sutlac.jpg",
-        "prepTime": "15 dakika",
-        "cookTime": "45 dakika",
-        "difficulty": "Orta",
-        "servings": 8,
-        "ingredients": [
+        "image": [
+          "/images/sutlac.jpg"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT15M",
+        "cookTime": "PT45M",
+        "totalTime": "PT60M",
+        "keywords": "sütlaç, tatlı, fırında sütlaç",
+        "recipeYield": "8 servings",
+        "recipeCategory": "Tatlı",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "220 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.8,
+          "ratingCount": 112
+        },
+        "recipeIngredient": [
           "1 litre süt",
           "1/2 su bardağı pirinç",
           "1 su bardağı şeker",
@@ -172,14 +418,42 @@
           "1 paket vanilya",
           "Tarçın"
         ],
-        "instructions": [
-          "Pirinci yıkayıp süzün ve yumuşayana kadar haşlayın.",
-          "Haşlanmış pirince sütü ekleyip karıştırın.",
-          "Şekeri ekleyip kaynamaya bırakın.",
-          "Nişastayı az sütle ezip karışıma ekleyin.",
-          "Ocaktan alıp vanilyayı ekleyin.",
-          "Fırın kaplarına paylaştırıp fırında üzeri kızarana kadar pişirin.",
-          "Soğuduktan sonra üzerine tarçın serperek servis yapın."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Pirinci Hazırla",
+            "text": "Pirinci yıkayıp süzün ve yumuşayana kadar haşlayın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Sütü Ekle",
+            "text": "Haşlanmış pirince sütü ekleyip karıştırın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Şeker Ekle",
+            "text": "Şekeri ekleyip kaynamaya bırakın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Nişasta Ekle",
+            "text": "Nişastayı az sütle ezip karışıma ekleyin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Vanilya Ekle",
+            "text": "Ocaktan alıp vanilyayı ekleyin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Pişir",
+            "text": "Fırın kaplarına paylaştırıp fırında üzeri kızarana kadar pişirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Servis Et",
+            "text": "Soğuduktan sonra üzerine tarçın serperek servis yapın."
+          }
         ]
       }
     ]
@@ -190,15 +464,36 @@
     "categoryName": "Salatalar",
     "recipes": [
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "401",
-        "title": "Çoban Salatası",
+        "name": "Çoban Salatası",
         "description": "Klasik Türk salatası",
-        "image": "/images/coban-salatasi.jpg",
-        "prepTime": "15 dakika",
-        "cookTime": "0 dakika",
-        "difficulty": "Kolay",
-        "servings": 4,
-        "ingredients": [
+        "image": [
+          "/images/coban-salatasi.jpg"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT15M",
+        "cookTime": "PT0M",
+        "totalTime": "PT15M",
+        "keywords": "çoban salatası, salata, domates, salatalık",
+        "recipeYield": "4 servings",
+        "recipeCategory": "Salata",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "80 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.7,
+          "ratingCount": 167
+        },
+        "recipeIngredient": [
           "3 adet domates",
           "2 adet salatalık",
           "1 adet soğan",
@@ -208,12 +503,32 @@
           "Limon suyu",
           "Tuz"
         ],
-        "instructions": [
-          "Domatesleri, salatalıkları, soğanı ve biberi küp küp doğrayın.",
-          "Maydanozu ince ince kıyın.",
-          "Tüm malzemeleri bir kaseye alın.",
-          "Zeytinyağı, limon suyu ve tuzu ekleyip karıştırın.",
-          "Servis etmeden önce 15 dakika buzdolabında dinlendirin."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Sebzeleri Doğra",
+            "text": "Domatesleri, salatalıkları, soğanı ve biberi küp küp doğrayın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Maydanoz",
+            "text": "Maydanozu ince ince kıyın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Karıştır",
+            "text": "Tüm malzemeleri bir kaseye alın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Sos Ekle",
+            "text": "Zeytinyağı, limon suyu ve tuzu ekleyip karıştırın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Dinlendir",
+            "text": "Servis etmeden önce 15 dakika buzdolabında dinlendirin."
+          }
         ]
       }
     ]
@@ -224,15 +539,36 @@
     "categoryName": "Mezeler",
     "recipes": [
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "501",
-        "title": "Humus",
+        "name": "Humus",
         "description": "Nohut püresi ile yapılan Orta Doğu mezesi",
-        "image": "/images/humus.jpg",
-        "prepTime": "15 dakika",
-        "cookTime": "0 dakika",
-        "difficulty": "Kolay",
-        "servings": 6,
-        "ingredients": [
+        "image": [
+          "/images/humus.jpg"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Middle Eastern",
+        "prepTime": "PT15M",
+        "cookTime": "PT0M",
+        "totalTime": "PT15M",
+        "keywords": "humus, meze, nohut, tahin",
+        "recipeYield": "6 servings",
+        "recipeCategory": "Meze",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "150 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.8,
+          "ratingCount": 134
+        },
+        "recipeIngredient": [
           "2 su bardağı haşlanmış nohut",
           "2 diş sarımsak",
           "3 yemek kaşığı tahin",
@@ -242,12 +578,32 @@
           "Tuz",
           "Pul biber ve maydanoz (süslemek için)"
         ],
-        "instructions": [
-          "Nohutları robottan geçirin.",
-          "Sarımsak, tahin, limon suyu, zeytinyağı, kimyon ve tuzu ekleyin.",
-          "Tüm malzemeleri robottan tekrar geçirin.",
-          "Kıvamı koyu ise biraz su ekleyerek tekrar karıştırın.",
-          "Servis tabağına alıp üzerine zeytinyağı gezdirip pul biber ve maydanoz ile süsleyin."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Nohutları Ez",
+            "text": "Nohutları robottan geçirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Malzemeleri Ekle",
+            "text": "Sarımsak, tahin, limon suyu, zeytinyağı, kimyon ve tuzu ekleyin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Karıştır",
+            "text": "Tüm malzemeleri robottan tekrar geçirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Kıvamı Ayarla",
+            "text": "Kıvamı koyu ise biraz su ekleyerek tekrar karıştırın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Süsle",
+            "text": "Servis tabağına alıp üzerine zeytinyağı gezdirip pul biber ve maydanoz ile süsleyin."
+          }
         ]
       },
       {
