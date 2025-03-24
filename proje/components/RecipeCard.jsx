@@ -10,10 +10,11 @@ export default function RecipeCard({ recipe, categorySlug }) {
     <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
       <div className="relative h-48 w-full">
         <Image
-          src={Array.isArray(recipe.image) ? recipe.image[0] : recipe.image || "/images/placeholder-food.jpg"}
+          src={Array.isArray(recipe.image) ? recipe.image[0] : recipe.image || "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/placeholder-food_xyz123.jpg"}
           alt={recipe.name || recipe.title}
           fill
           className="object-cover"
+          unoptimized
         />
       </div>
       

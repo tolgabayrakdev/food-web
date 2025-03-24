@@ -50,11 +50,12 @@ export default async function RecipePage({ params }) {
       <main className="flex-grow bg-indigo-50">
         <div className="relative h-[40vh] lg:h-[60vh] w-full">
           <Image
-            src={recipe.image[0] || "/images/placeholder-food.jpg"}
+            src={recipe.image[0] || "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/placeholder-food_xyz123.jpg"}
             alt={recipe.name}
             fill
             className="object-cover"
             priority
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-8 text-white">

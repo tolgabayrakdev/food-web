@@ -11,7 +11,7 @@
         "name": "Karnıyarık",
         "description": "Patlıcan ile yapılan geleneksel Türk yemeği",
         "image": [
-          "/images/karniyarik.jpg"
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852654/karniyarik_znfhzh.jpg"
         ],
         "author": {
           "@type": "Person",
@@ -79,7 +79,7 @@
         "name": "Mantı",
         "description": "Türk mutfağının sevilen hamur işi",
         "image": [
-          "/images/manti.jpg"
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/manti_gicyxz.jpg"
         ],
         "author": {
           "@type": "Person",
@@ -159,7 +159,7 @@
         "name": "Mercimek Çorbası",
         "description": "Klasik Türk mutfağının vazgeçilmez çorbası",
         "image": [
-          "/images/mercimek.jpg"
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/mercimek-corbasi_def456.jpg"
         ],
         "author": {
           "@type": "Person",
@@ -231,7 +231,7 @@
         "name": "Ezogelin Çorbası",
         "description": "Mercimek ve bulgurla hazırlanan lezzetli çorba",
         "image": [
-          "/images/ezogelin.jpg"
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/ezogelin-corbasi_ghi789.jpg"
         ],
         "author": {
           "@type": "Person",
@@ -311,7 +311,7 @@
         "name": "Baklava",
         "description": "Geleneksel Türk tatlısı",
         "image": [
-          "/images/baklava.jpg"
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/baklava_jkl012.jpg"
         ],
         "author": {
           "@type": "Person",
@@ -387,7 +387,7 @@
         "name": "Sütlaç",
         "description": "Pirinçli süt tatlısı",
         "image": [
-          "/images/sutlac.jpg"
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/sutlac_mno345.jpg"
         ],
         "author": {
           "@type": "Person",
@@ -470,7 +470,7 @@
         "name": "Çoban Salatası",
         "description": "Klasik Türk salatası",
         "image": [
-          "/images/coban-salatasi.jpg"
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/coban-salatasi_pqr678.jpg"
         ],
         "author": {
           "@type": "Person",
@@ -545,7 +545,7 @@
         "name": "Humus",
         "description": "Nohut püresi ile yapılan Orta Doğu mezesi",
         "image": [
-          "/images/humus.jpg"
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/humus_stu901.jpg"
         ],
         "author": {
           "@type": "Person",
@@ -610,7 +610,9 @@
         "id": "502",
         "title": "Patlıcan Ezme",
         "description": "Közlenmiş patlıcan ile yapılan geleneksel meze",
-        "image": "/images/patlican-ezme.jpg",
+        "image": [
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/patlican-ezme_vwx234.jpg"
+        ],
         "prepTime": "20 dakika",
         "cookTime": "15 dakika",
         "difficulty": "Orta",
@@ -643,7 +645,9 @@
         "id": "601",
         "title": "Poğaça",
         "description": "Yumuşak ve lezzetli Türk poğaçası",
-        "image": "/images/pogaca.jpg",
+        "image": [
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/pogaca_yza567.jpg"
+        ],
         "prepTime": "30 dakika",
         "cookTime": "25 dakika",
         "difficulty": "Orta",
@@ -675,7 +679,9 @@
         "id": "602",
         "title": "Su Böreği",
         "description": "Kat kat lezzet: Geleneksel su böreği",
-        "image": "/images/su-boregi.jpg",
+        "image": [
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/su-boregi_bcd890.jpg"
+        ],
         "prepTime": "60 dakika",
         "cookTime": "40 dakika",
         "difficulty": "Zor",
@@ -709,7 +715,9 @@
         "id": "701",
         "title": "Menemen",
         "description": "Domates, biber ve yumurta ile hazırlanan klasik Türk kahvaltılığı",
-        "image": "/images/menemen.jpg",
+        "image": [
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/menemen_efg123.jpg"
+        ],
         "prepTime": "10 dakika",
         "cookTime": "15 dakika",
         "difficulty": "Kolay",
@@ -737,7 +745,9 @@
         "id": "702",
         "title": "Simit",
         "description": "Susamlı, gevrek Türk gevreği",
-        "image": "/images/simit.jpg",
+        "image": [
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/simit_hij456.jpg"
+        ],
         "prepTime": "30 dakika",
         "cookTime": "25 dakika",
         "difficulty": "Orta",
@@ -774,7 +784,9 @@
         "id": "801",
         "title": "Patates Kızartması",
         "description": "Ev yapımı çıtır patates kızartması",
-        "image": "/images/patates-kizartmasi.jpg",
+        "image": [
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/patates-kizartmasi_klm789.jpg"
+        ],
         "prepTime": "10 dakika",
         "cookTime": "15 dakika",
         "difficulty": "Kolay",
@@ -799,7 +811,9 @@
         "id": "802",
         "title": "Çiğ Köfte",
         "description": "Etsiz, baharatlı bulgur köftesi",
-        "image": "/images/cig-kofte.jpg",
+        "image": [
+          "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/cig-kofte_nop012.jpg"
+        ],
         "prepTime": "40 dakika",
         "cookTime": "0 dakika",
         "difficulty": "Orta",
