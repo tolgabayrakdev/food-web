@@ -43,15 +43,13 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">İletişim</h3>
             <ul className="space-y-2 text-sm opacity-80">
-              <li>Email: iletisim@lezzetdunyasi.com</li>
-              <li>Telefon: +90 (555) 123 45 67</li>
-              <li>Adres: Lezzet Sokak, No: 42, İstanbul</li>
+              <li>Email: iletisim@lezzetdunyasi.com</li>     
             </ul>
           </div>
         </div>
         
         <div className="mt-8 pt-6 border-t border-indigo-600 text-center text-sm opacity-80">
-          <p>© {new Date().getFullYear()} Lezzet Dünyası. Tüm hakları saklıdır.</p>
+          <p>© {new Date().getFullYear()} Lezzet Hazinesi. Tüm hakları saklıdır.</p>
         </div>
       </div>
     </footer>
