@@ -28,7 +28,7 @@ export function generateStaticParams() {
   return categories.flatMap((category) => 
     category.recipes.map((recipe) => ({
       slug: category.category,
-      recipeSlug: createRecipeSlug(recipe.title),
+      recipeSlug: createRecipeSlug(recipe.name),
     }))
   );
 }

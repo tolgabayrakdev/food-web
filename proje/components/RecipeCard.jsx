@@ -4,7 +4,7 @@ import { Card } from "./ui/card";
 import { createRecipeSlug } from "@/lib/recipes";
 
 export default function RecipeCard({ recipe, categorySlug }) {
-  const recipeSlug = recipe.slug || createRecipeSlug(recipe.title);
+  const recipeSlug = recipe.slug || createRecipeSlug(recipe.name);
   
   return (
     <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
