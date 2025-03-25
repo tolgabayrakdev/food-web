@@ -115,7 +115,7 @@ export default async function RecipePage({ params }) {
                 {recipe.nutrition && (
                   <div className="mt-6 pt-6 border-t">
                     <h3 className="text-lg font-semibold mb-2 text-indigo-800">Besin Değerleri</h3>
-                    <p className="text-gray-600">{recipe.nutrition.calories}</p>
+                    <p className="text-gray-600">{recipe.nutrition.calories.replace(' calories', ' kalori')}</p>
                   </div>
                 )}
               </div>
