@@ -607,17 +607,36 @@
         ]
       },
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "502",
-        "title": "Patlıcan Ezme",
+        "name": "Patlıcan Ezme",
         "description": "Közlenmiş patlıcan ile yapılan geleneksel meze",
         "image": [
           "https://res.cloudinary.com/dwcsscwme/image/upload/v1742931299/2148814530_w199ih.jpg"
         ],
-        "prepTime": "20 dakika",
-        "cookTime": "15 dakika",
-        "difficulty": "Orta",
-        "servings": 6,
-        "ingredients": [
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT20M",
+        "cookTime": "PT15M",
+        "totalTime": "PT35M",
+        "keywords": "patlıcan ezme, meze, közlenmiş patlıcan",
+        "recipeYield": "6 servings",
+        "recipeCategory": "Meze",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "120 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.7,
+          "ratingCount": 98
+        },
+        "recipeIngredient": [
           "3 adet patlıcan",
           "2 diş sarımsak",
           "1/2 demet maydanoz",
@@ -625,13 +644,37 @@
           "1 adet limon suyu",
           "Tuz, karabiber"
         ],
-        "instructions": [
-          "Patlıcanları közleyin ve kabuklarını soyun.",
-          "Közlenmiş patlıcanları bıçakla küçük küçük doğrayın.",
-          "Sarımsağı ezin ve patlıcana ekleyin.",
-          "Maydanozu ince kıyın ve karışıma ekleyin.",
-          "Zeytinyağı, limon suyu, tuz ve karabiber ekleyip karıştırın.",
-          "Servis tabağına alıp üzerine zeytinyağı gezdirin."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Patlıcanları Közle",
+            "text": "Patlıcanları közleyin ve kabuklarını soyun."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Doğra",
+            "text": "Közlenmiş patlıcanları bıçakla küçük küçük doğrayın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Sarımsak Ekle",
+            "text": "Sarımsağı ezin ve patlıcana ekleyin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Maydanoz Ekle",
+            "text": "Maydanozu ince kıyın ve karışıma ekleyin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Sos Ekle",
+            "text": "Zeytinyağı, limon suyu, tuz ve karabiber ekleyip karıştırın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Servis Et",
+            "text": "Servis tabağına alıp üzerine zeytinyağı gezdirin."
+          }
         ]
       }
     ]
@@ -642,17 +685,36 @@
     "categoryName": "Hamur İşleri",
     "recipes": [
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "601",
-        "title": "Poğaça",
+        "name": "Poğaça",
         "description": "Yumuşak ve lezzetli Türk poğaçası",
         "image": [
           "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/pogaca_yza567.jpg"
         ],
-        "prepTime": "30 dakika",
-        "cookTime": "25 dakika",
-        "difficulty": "Orta",
-        "servings": 12,
-        "ingredients": [
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT30M",
+        "cookTime": "PT25M",
+        "totalTime": "PT55M",
+        "keywords": "poğaça, hamur işi, peynirli poğaça",
+        "recipeYield": "12 servings",
+        "recipeCategory": "Hamur İşi",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "180 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.8,
+          "ratingCount": 145
+        },
+        "recipeIngredient": [
           "4 su bardağı un",
           "1 su bardağı ılık süt",
           "125g tereyağı (oda sıcaklığında)",
@@ -664,29 +726,80 @@
           "1 adet yumurta sarısı (üzeri için)",
           "Çörek otu, susam (süslemek için)"
         ],
-        "instructions": [
-          "Unu geniş bir kaba alın ve ortasını açın.",
-          "Ilık sütü, mayayı, şekeri ekleyip karıştırın.",
-          "Tereyağını, yumurtayı ve tuzu ekleyip yumuşak bir hamur elde edin.",
-          "Hamuru üzerini kapatıp 1 saat dinlendirin.",
-          "Hamurdan ceviz büyüklüğünde parçalar koparıp içlerine peynir veya patates doldurun.",
-          "Yağlı kağıt serilmiş tepsiye dizin ve üzerine yumurta sarısı sürün.",
-          "Üzerlerine çörek otu ve susam serpin.",
-          "180 derece fırında 25 dakika pişirin."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Unu Hazırla",
+            "text": "Unu geniş bir kaba alın ve ortasını açın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Maya Ekle",
+            "text": "Ilık sütü, mayayı, şekeri ekleyip karıştırın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Hamur Yap",
+            "text": "Tereyağını, yumurtayı ve tuzu ekleyip yumuşak bir hamur elde edin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Dinlendir",
+            "text": "Hamuru üzerini kapatıp 1 saat dinlendirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Doldur",
+            "text": "Hamurdan ceviz büyüklüğünde parçalar koparıp içlerine peynir veya patates doldurun."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Diz",
+            "text": "Yağlı kağıt serilmiş tepsiye dizin ve üzerine yumurta sarısı sürün."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Süsle",
+            "text": "Üzerlerine çörek otu ve susam serpin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Pişir",
+            "text": "180 derece fırında 25 dakika pişirin."
+          }
         ]
       },
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "602",
-        "title": "Su Böreği",
+        "name": "Su Böreği",
         "description": "Kat kat lezzet: Geleneksel su böreği",
         "image": [
           "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/su-boregi_bcd890.jpg"
         ],
-        "prepTime": "60 dakika",
-        "cookTime": "40 dakika",
-        "difficulty": "Zor",
-        "servings": 8,
-        "ingredients": [
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT60M",
+        "cookTime": "PT40M",
+        "totalTime": "PT100M",
+        "keywords": "su böreği, hamur işi, peynirli börek",
+        "recipeYield": "8 servings",
+        "recipeCategory": "Hamur İşi",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "320 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.9,
+          "ratingCount": 167
+        },
+        "recipeIngredient": [
           "500g yufka",
           "300g beyaz peynir",
           "1/2 demet maydanoz",
@@ -694,14 +807,42 @@
           "Tuz, karabiber",
           "1 tencere kaynar su"
         ],
-        "instructions": [
-          "Peyniri ezin, maydanozu kıyın ve karıştırın.",
-          "Yufkaları tezgaha serin.",
-          "Her bir yufkayı kaynar suda haşlayıp çıkarın ve süzün.",
-          "Yağlanmış tepsiye bir kat yufka serin ve üzerine yağ gezdirin.",
-          "3-4 kat yufka serdikten sonra hazırladığınız peynirli harcı yayın.",
-          "Kalan yufkaları aynı şekilde haşlayıp, yağlayarak tepsiye dizin.",
-          "180 derece fırında altı üstü kızarana kadar pişirin."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "İç Harcı Hazırla",
+            "text": "Peyniri ezin, maydanozu kıyın ve karıştırın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Yufkayı Ser",
+            "text": "Yufkaları tezgaha serin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Haşla",
+            "text": "Her bir yufkayı kaynar suda haşlayıp çıkarın ve süzün."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Yağla",
+            "text": "Yağlanmış tepsiye bir kat yufka serin ve üzerine yağ gezdirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Harcı Yay",
+            "text": "3-4 kat yufka serdikten sonra hazırladığınız peynirli harcı yayın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Kalan Yufkaları Ekle",
+            "text": "Kalan yufkaları aynı şekilde haşlayıp, yağlayarak tepsiye dizin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Pişir",
+            "text": "180 derece fırında altı üstü kızarana kadar pişirin."
+          }
         ]
       }
     ]
@@ -712,17 +853,36 @@
     "categoryName": "Kahvaltılıklar",
     "recipes": [
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "701",
-        "title": "Menemen",
+        "name": "Menemen",
         "description": "Domates, biber ve yumurta ile hazırlanan klasik Türk kahvaltılığı",
         "image": [
           "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/menemen_efg123.jpg"
         ],
-        "prepTime": "10 dakika",
-        "cookTime": "15 dakika",
-        "difficulty": "Kolay",
-        "servings": 2,
-        "ingredients": [
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT10M",
+        "cookTime": "PT15M",
+        "totalTime": "PT25M",
+        "keywords": "menemen, kahvaltılık, yumurta, domates",
+        "recipeYield": "2 servings",
+        "recipeCategory": "Kahvaltılık",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "250 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.8,
+          "ratingCount": 189
+        },
+        "recipeIngredient": [
           "4 adet domates",
           "2 adet yeşil biber",
           "1 adet soğan",
@@ -731,28 +891,75 @@
           "Tuz, karabiber, pul biber",
           "Maydanoz (isteğe bağlı)"
         ],
-        "instructions": [
-          "Soğanı ve biberi küçük küçük doğrayın.",
-          "Zeytinyağında soğanları pembeleşene kadar kavurun.",
-          "Biberleri ekleyip kavurmaya devam edin.",
-          "Domatesleri küp küp doğrayıp ekleyin ve suyunu çekene kadar pişirin.",
-          "Tuz ve baharatları ekleyin.",
-          "Üzerine yumurtaları kırın ve karıştırmadan pişirin.",
-          "İsteğe bağlı olarak üzerine kıyılmış maydanoz serpin."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Sebzeleri Doğra",
+            "text": "Soğanı ve biberi küçük küçük doğrayın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Soğanları Kavur",
+            "text": "Zeytinyağında soğanları pembeleşene kadar kavurun."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Biber Ekle",
+            "text": "Biberleri ekleyip kavurmaya devam edin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Domates Ekle",
+            "text": "Domatesleri küp küp doğrayıp ekleyin ve suyunu çekene kadar pişirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Baharat Ekle",
+            "text": "Tuz ve baharatları ekleyin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Yumurta Ekle",
+            "text": "Üzerine yumurtaları kırın ve karıştırmadan pişirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Süsle",
+            "text": "İsteğe bağlı olarak üzerine kıyılmış maydanoz serpin."
+          }
         ]
       },
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "702",
-        "title": "Simit",
+        "name": "Simit",
         "description": "Susamlı, gevrek Türk gevreği",
         "image": [
           "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/simit_hij456.jpg"
         ],
-        "prepTime": "30 dakika",
-        "cookTime": "25 dakika",
-        "difficulty": "Orta",
-        "servings": 8,
-        "ingredients": [
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT30M",
+        "cookTime": "PT25M",
+        "totalTime": "PT55M",
+        "keywords": "simit, kahvaltılık, susamlı simit",
+        "recipeYield": "8 servings",
+        "recipeCategory": "Kahvaltılık",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "200 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.9,
+          "ratingCount": 156
+        },
+        "recipeIngredient": [
           "4 su bardağı un",
           "1 paket instant maya",
           "1.5 su bardağı ılık su",
@@ -762,15 +969,47 @@
           "1/2 su bardağı su (pekmez suyu için)",
           "1 su bardağı susam"
         ],
-        "instructions": [
-          "Un, maya, tuz ve şekeri karıştırın.",
-          "Yavaş yavaş su ekleyerek yumuşak bir hamur elde edin.",
-          "Hamuru 30 dakika dinlendirin.",
-          "Hamurdan 8 eşit parça koparın ve her birini uzun bir silindir haline getirin.",
-          "İki silindiri birbirine yapıştırıp halka şeklinde bükün.",
-          "Pekmezi su ile karıştırın.",
-          "Simitleri pekmezli suya batırıp susama bulayın.",
-          "180 derece fırında 25 dakika pişirin."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Hamur Yap",
+            "text": "Un, maya, tuz ve şekeri karıştırın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Su Ekle",
+            "text": "Yavaş yavaş su ekleyerek yumuşak bir hamur elde edin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Dinlendir",
+            "text": "Hamuru 30 dakika dinlendirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Şekillendir",
+            "text": "Hamurdan 8 eşit parça koparın ve her birini uzun bir silindir haline getirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Halka Yap",
+            "text": "İki silindiri birbirine yapıştırıp halka şeklinde bükün."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Pekmez Hazırla",
+            "text": "Pekmezi su ile karıştırın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Susamla",
+            "text": "Simitleri pekmezli suya batırıp susama bulayın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Pişir",
+            "text": "180 derece fırında 25 dakika pişirin."
+          }
         ]
       }
     ]
@@ -781,44 +1020,110 @@
     "categoryName": "Atıştırmalıklar",
     "recipes": [
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "801",
-        "title": "Patates Kızartması",
+        "name": "Patates Kızartması",
         "description": "Ev yapımı çıtır patates kızartması",
         "image": [
           "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/patates-kizartmasi_klm789.jpg"
         ],
-        "prepTime": "10 dakika",
-        "cookTime": "15 dakika",
-        "difficulty": "Kolay",
-        "servings": 4,
-        "ingredients": [
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT10M",
+        "cookTime": "PT15M",
+        "totalTime": "PT25M",
+        "keywords": "patates kızartması, atıştırmalık, çıtır patates",
+        "recipeYield": "4 servings",
+        "recipeCategory": "Atıştırmalık",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "280 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.7,
+          "ratingCount": 134
+        },
+        "recipeIngredient": [
           "6 adet orta boy patates",
           "Kızartmak için sıvı yağ",
           "Tuz",
           "İsteğe bağlı baharatlar (kekik, pul biber, vb.)"
         ],
-        "instructions": [
-          "Patatesleri soyun ve çubuk şeklinde kesin.",
-          "Kesilen patatesleri soğuk suda 30 dakika bekletin.",
-          "Patatesleri sudan çıkarıp kağıt havlu ile iyice kurulayın.",
-          "Derin bir tavada yağı ısıtın.",
-          "Patatesleri kızgın yağda altın sarısı renk alana kadar kızartın.",
-          "Kızaran patatesleri havlu kağıt serilmiş tabağa alın.",
-          "Sıcakken tuz ve isteğe bağlı baharatları ekleyin."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Patatesleri Hazırla",
+            "text": "Patatesleri soyun ve çubuk şeklinde kesin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Beklet",
+            "text": "Kesilen patatesleri soğuk suda 30 dakika bekletin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Kurut",
+            "text": "Patatesleri sudan çıkarıp kağıt havlu ile iyice kurulayın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Yağı Isıt",
+            "text": "Derin bir tavada yağı ısıtın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Kızart",
+            "text": "Patatesleri kızgın yağda altın sarısı renk alana kadar kızartın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Süz",
+            "text": "Kızaran patatesleri havlu kağıt serilmiş tabağa alın."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Baharatla",
+            "text": "Sıcakken tuz ve isteğe bağlı baharatları ekleyin."
+          }
         ]
       },
       {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
         "id": "802",
-        "title": "Çiğ Köfte",
+        "name": "Çiğ Köfte",
         "description": "Etsiz, baharatlı bulgur köftesi",
         "image": [
           "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/cig-kofte_nop012.jpg"
         ],
-        "prepTime": "40 dakika",
-        "cookTime": "0 dakika",
-        "difficulty": "Orta",
-        "servings": 6,
-        "ingredients": [
+        "author": {
+          "@type": "Person",
+          "name": "Lezzet Hazinesi"
+        },
+        "datePublished": "2024-03-10",
+        "recipeCuisine": "Turkish",
+        "prepTime": "PT40M",
+        "cookTime": "PT0M",
+        "totalTime": "PT40M",
+        "keywords": "çiğ köfte, atıştırmalık, bulgur köftesi",
+        "recipeYield": "6 servings",
+        "recipeCategory": "Atıştırmalık",
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "160 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": 4.8,
+          "ratingCount": 178
+        },
+        "recipeIngredient": [
           "2 su bardağı ince bulgur",
           "1 su bardağı ince doğranmış soğan",
           "3 diş sarımsak",
@@ -829,15 +1134,47 @@
           "2 yemek kaşığı zeytinyağı",
           "Tuz, karabiber, kimyon, pul biber"
         ],
-        "instructions": [
-          "Bulguru geniş bir kaba alın ve üzerini hafifçe geçecek kadar su ekleyin.",
-          "Bulgur suyu çekene kadar bekletin.",
-          "Soğanı ve sarımsağı rondodan geçirin.",
-          "Salçaları, zeytinyağını ve baharatları ekleyip iyice yoğurun.",
-          "Karışımı bulgura ekleyin ve yoğurmaya devam edin.",
-          "İnce kıyılmış maydanozu ve limon suyunu ekleyin.",
-          "Hamur kıvam alana kadar yoğurun.",
-          "Köfteleri şekillendirip marul yaprakları ile servis yapın."
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Bulguru Hazırla",
+            "text": "Bulguru geniş bir kaba alın ve üzerini hafifçe geçecek kadar su ekleyin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Beklet",
+            "text": "Bulgur suyu çekene kadar bekletin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Sebzeleri Hazırla",
+            "text": "Soğanı ve sarımsağı rondodan geçirin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Malzemeleri Ekle",
+            "text": "Salçaları, zeytinyağını ve baharatları ekleyip iyice yoğurun."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Karıştır",
+            "text": "Karışımı bulgura ekleyin ve yoğurmaya devam edin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Son Malzemeleri Ekle",
+            "text": "İnce kıyılmış maydanozu ve limon suyunu ekleyin."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Yoğur",
+            "text": "Hamur kıvam alana kadar yoğurun."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Servis Et",
+            "text": "Köfteleri şekillendirip marul yaprakları ile servis yapın."
+          }
         ]
       }
     ]
