@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /tarifler
+Allow: /kategoriler
+Allow: /hakkimizda
+Disallow: /api/
+Disallow: /admin/
+
+Sitemap: https://lezzetdunyasi.com/sitemap.xml 
