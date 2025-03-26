@@ -2,6 +2,12 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+export const metadata = {
+  title: 'Sayfa Bulunamadı | Lezzet Hazinesi',
+  description: 'Aradığınız sayfa bulunamadı. Lezzet Dünyası ana sayfasına dönerek lezzetli tarifleri keşfedin.',
+  robots: 'noindex, nofollow',
+};
+
 export default function NotFound() {
   return (
     <div className="min-h-screen flex flex-col">

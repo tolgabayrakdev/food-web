@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="google-site-verification" content="kbt80KgkmIzh44uYChZCRbejqXVJgCSUCwKKS0hnKKc" />
-        <meta name="theme-color" content="#f43f5e" />
+        <meta name="theme-color" content="" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

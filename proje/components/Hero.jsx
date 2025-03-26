@@ -38,7 +38,7 @@ export default function Hero() {
             href="/kategoriler" 
             className="bg-indigo-600 text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-indigo-700 transition-all hover:shadow-lg hover:shadow-indigo-600/30"
           >
-            Tarifleri Keşfet
+            Kategorileri Keşfet
           </Link>
           <Link 
             href="/tarifler" 
@@ -46,23 +46,6 @@ export default function Hero() {
           >
             Tüm Tarifler
           </Link>
-        </div>
-        
-        <div className="absolute bottom-8 left-0 right-0 flex justify-center">
-          <div className="flex space-x-8">
-            <div className="text-center">
-              <span className="block text-3xl font-bold text-indigo-400">500+</span>
-              <span className="text-sm text-gray-300">Tarif</span>
-            </div>
-            <div className="text-center">
-              <span className="block text-3xl font-bold text-indigo-400">8+</span>
-              <span className="text-sm text-gray-300">Kategori</span>
-            </div>
-            <div className="text-center">
-              <span className="block text-3xl font-bold text-indigo-400">10K+</span>
-              <span className="text-sm text-gray-300">Mutlu Aşçı</span>
-            </div>
-          </div>
         </div>
       </div>
     </div>

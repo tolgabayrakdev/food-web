@@ -16,17 +16,17 @@ export default function Home() {
         <Hero />
         
         {/* Categories Section with new design */}
-        <section className="py-20">
+        <section className="py-12 sm:py-20">
           <div className="max-w-7xl mx-auto px-4">
-            <div className="text-center mb-16">
+            <div className="text-center mb-8 sm:mb-16">
               <span className="text-indigo-600 text-sm font-semibold tracking-wider uppercase">KEŞFEDIN</span>
-              <h2 className="text-4xl font-bold text-gray-800 mt-2 mb-4">Yemek Kategorileri</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mt-2 mb-4">Yemek Kategorileri</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
                 Türk mutfağının zengin kategorileri arasında gezinin ve damak zevkinize uygun tarifleri keşfedin
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {categories.map((category, index) => (
                 <div key={category.id}>
                   <CategoryCard category={category} />
@@ -49,19 +49,19 @@ export default function Home() {
         </section>
         
         {/* Features Section */}
-        <section className="py-20">
+        <section className="py-12 sm:py-20">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <div className="text-center mb-16">
+            <div className="text-center mb-8 sm:mb-16">
               <span className="text-indigo-600 text-sm font-semibold tracking-wider uppercase">ÖZELLİKLER</span>
-              <h2 className="text-4xl font-bold text-gray-800 mt-2 mb-4">Mutfakta Profesyonel Ol</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mt-2 mb-4">Mutfakta Profesyonel Ol</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
                 Lezzet Dünyası ile ev yemeklerinde profesyonel dokunuşlar. 
                 Detaylı tarifler, püf noktaları ve geleneksel Türk lezzetleri 
                 sizleri bekliyor.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 max-w-4xl mx-auto">
               <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -96,12 +96,12 @@ export default function Home() {
         </section>
         
         {/* FAQ Section */}
-        <section className="bg-indigo-50 py-20">
+        <section className="bg-indigo-50 py-12 sm:py-20">
           <div className="max-w-7xl mx-auto px-4">
-            <div className="text-center mb-16">
+            <div className="text-center mb-8 sm:mb-16">
               <span className="text-indigo-600 text-sm font-semibold tracking-wider uppercase">YARDIM</span>
-              <h2 className="text-4xl font-bold text-gray-800 mt-2 mb-4">Sık Sorulan Sorular</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mt-2 mb-4">Sık Sorulan Sorular</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
                 Kullanıcılarımızın en çok merak ettiği sorular ve yanıtları
               </p>
             </div>
@@ -129,22 +129,16 @@ export default function Home() {
         </section>
         
         {/* Call to Action Section */}
-        <section className="py-20 bg-gradient-to-r from-indigo-700 to-purple-700 text-white">
+        <section className="py-12 sm:py-20 bg-gradient-to-r from-indigo-700 to-purple-700 text-white">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-6">Lezzet Yolculuğuna Hazır mısınız?</h2>
-            <p className="text-xl mb-10 max-w-3xl mx-auto opacity-90">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6">Lezzet Yolculuğuna Hazır mısınız?</h2>
+            <p className="text-lg sm:text-xl mb-8 sm:mb-10 max-w-3xl mx-auto opacity-90">
               Geleneksel Türk mutfağının zengin lezzetleri sizi bekliyor. Hemen kaydolun ve size özel tarifleri keşfedin.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="/uye-ol" 
-                className="inline-block px-8 py-4 bg-white text-indigo-700 rounded-full font-bold text-lg shadow-xl hover:bg-gray-100 transition-colors hover:shadow-2xl"
-              >
-                Ücretsiz Hesap Oluştur
-              </a>
+            <div className="flex justify-center">
               <a 
                 href="/tarifler" 
-                className="inline-block px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-indigo-700 transition-colors"
+                className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-white text-white rounded-full font-bold text-base sm:text-lg hover:bg-white hover:text-indigo-700 transition-colors"
               >
                 Tariflere Göz At
               </a>
