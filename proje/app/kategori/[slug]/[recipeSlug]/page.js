@@ -66,7 +66,7 @@ export default async function RecipePage({ params }) {
               >
                 ← {category.categoryName}
               </Link>
-              <h1 className="text-4xl md:text-5xl font-bold mb-2">{recipe.name}</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-2">{recipe.name} Tarifi</h1>
               <p className="text-xl md:text-2xl opacity-90">{recipe.description}</p>
               
               <div className="flex flex-wrap items-center gap-4 mt-4">
