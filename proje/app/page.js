@@ -39,7 +39,7 @@ export default function Home() {
                 href="/tarifler" 
                 className="inline-flex items-center px-6 py-3 bg-indigo-50 text-indigo-700 rounded-full font-medium hover:bg-indigo-100 transition-colors"
               >
-                Tüm Tarifleri Gör
+                <span className="block">Tüm Tarifleri Gör</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
@@ -135,7 +135,13 @@ export default function Home() {
             <p className="text-lg sm:text-xl mb-8 sm:mb-10 max-w-3xl mx-auto opacity-90">
               Geleneksel Türk mutfağının zengin lezzetleri sizi bekliyor. Hemen kaydolun ve size özel tarifleri keşfedin.
             </p>
-            <div className="flex justify-center">
+            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <a 
+                href="/kategoriler" 
+                className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-white text-indigo-700 rounded-full font-bold text-base sm:text-lg hover:bg-opacity-90 transition-colors"
+              >
+                Kategorileri Keşfet
+              </a>
               <a 
                 href="/tarifler" 
                 className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-white text-white rounded-full font-bold text-base sm:text-lg hover:bg-white hover:text-indigo-700 transition-colors"
