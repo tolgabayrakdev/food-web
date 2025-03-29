@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2712035708314627"
-          crossorigin="anonymous"></script>
+          crossOrigin="anonymous"></script>
         <meta name="google-site-verification" content="kbt80KgkmIzh44uYChZCRbejqXVJgCSUCwKKS0hnKKc" />
         <meta name="theme-color" content="" />
       </head>
