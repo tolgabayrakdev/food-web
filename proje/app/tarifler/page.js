@@ -8,7 +8,12 @@ import SearchBar from "@/components/SearchBar";
 import RecipeCard from "@/components/RecipeCard";
 import Pagination from "@/components/Pagination";
 import CategoryFilter from "@/components/CategoryFilter";
-import { getAllRecipes, getAllCategories, paginateRecipes, searchRecipes } from "@/lib/recipes";
+import { 
+  getAllRecipes, 
+  getAllCategories, 
+  paginateRecipes, 
+  searchRecipes 
+} from "@/lib/client-recipes";
 
 // Note: Metadata must be in a separate server component since this is a client component
 // This is for reference and needs to be implemented in a separate layout.js or similar
@@ -29,33 +34,41 @@ function RecipesContent() {
     totalRecipes: 0
   });
   const [isLoading, setIsLoading] = useState(true);
+  const [categories, setCategories] = useState([]);
   
-  // Get all categories for the filter
-  const categories = getAllCategories();
+  useEffect(() => {
+    // Load categories
+    const loadCategories = async () => {
+      const allCategories = await getAllCategories();
+      setCategories(allCategories);
+    };
+    
+    loadCategories();
+  }, []);
   
   useEffect(() => {
     setIsLoading(true);
     
     // Small timeout to allow for better UX during typing
-    const timeoutId = setTimeout(() => {
+    const timeoutId = setTimeout(async () => {
       let filteredRecipes = [];
       
       // Handle search query first
       if (query) {
-        filteredRecipes = searchRecipes(query);
+        filteredRecipes = await searchRecipes(query);
         // Apply category filter to search results if needed
         if (categorySlug) {
           filteredRecipes = filteredRecipes.filter(recipe => recipe.categorySlug === categorySlug);
         }
       } else {
         // If no search query, get recipes by category or all recipes
-        filteredRecipes = getAllRecipes(categorySlug || null);
+        filteredRecipes = await getAllRecipes(categorySlug || null);
       }
       
       setRecipes(filteredRecipes);
       
       // Apply pagination to the filtered recipes
-      const paginatedResult = paginateRecipes(filteredRecipes, currentPage, RECIPES_PER_PAGE);
+      const paginatedResult = await paginateRecipes(filteredRecipes, currentPage, RECIPES_PER_PAGE);
       setPagination(paginatedResult);
       setIsLoading(false);
     }, 150);

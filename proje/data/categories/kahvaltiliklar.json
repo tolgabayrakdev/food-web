@@ -1,0 +1,167 @@
+{
+  "id": "7",
+  "category": "kahvaltiliklar",
+  "categoryName": "Kahvaltılıklar",
+  "recipes": [
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "701",
+      "name": "Menemen",
+      "description": "Domates, biber ve yumurta ile hazırlanan klasik Türk kahvaltılığı",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/menemen_efg123.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT10M",
+      "cookTime": "PT15M",
+      "totalTime": "PT25M",
+      "keywords": "menemen, kahvaltılık, yumurta, domates",
+      "recipeYield": "2 servings",
+      "recipeCategory": "Kahvaltılık",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "250 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "ratingCount": 189
+      },
+      "recipeIngredient": [
+        "4 adet domates",
+        "2 adet yeşil biber",
+        "1 adet soğan",
+        "3 adet yumurta",
+        "2 yemek kaşığı zeytinyağı",
+        "Tuz, karabiber, pul biber",
+        "Maydanoz (isteğe bağlı)"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Sebzeleri Doğra",
+          "text": "Soğanı ve biberi küçük küçük doğrayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Soğanları Kavur",
+          "text": "Zeytinyağında soğanları pembeleşene kadar kavurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Biber Ekle",
+          "text": "Biberleri ekleyip kavurmaya devam edin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Domates Ekle",
+          "text": "Domatesleri küp küp doğrayıp ekleyin ve suyunu çekene kadar pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Baharat Ekle",
+          "text": "Tuz ve baharatları ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Yumurta Ekle",
+          "text": "Üzerine yumurtaları kırın ve karıştırmadan pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Süsle",
+          "text": "İsteğe bağlı olarak üzerine kıyılmış maydanoz serpin."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "702",
+      "name": "Simit",
+      "description": "Susamlı, gevrek Türk gevreği",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/simit_hij456.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT30M",
+      "cookTime": "PT25M",
+      "totalTime": "PT55M",
+      "keywords": "simit, kahvaltılık, susamlı simit",
+      "recipeYield": "8 servings",
+      "recipeCategory": "Kahvaltılık",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "200 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.9,
+        "ratingCount": 156
+      },
+      "recipeIngredient": [
+        "4 su bardağı un",
+        "1 paket instant maya",
+        "1.5 su bardağı ılık su",
+        "1 tatlı kaşığı tuz",
+        "1 tatlı kaşığı şeker",
+        "3 yemek kaşığı üzüm pekmezi",
+        "1/2 su bardağı su (pekmez suyu için)",
+        "1 su bardağı susam"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Hamur Yap",
+          "text": "Un, maya, tuz ve şekeri karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Su Ekle",
+          "text": "Yavaş yavaş su ekleyerek yumuşak bir hamur elde edin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Dinlendir",
+          "text": "Hamuru 30 dakika dinlendirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Şekillendir",
+          "text": "Hamurdan 8 eşit parça koparın ve her birini uzun bir silindir haline getirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Halka Yap",
+          "text": "İki silindiri birbirine yapıştırıp halka şeklinde bükün."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pekmez Hazırla",
+          "text": "Pekmezi su ile karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Susamla",
+          "text": "Simitleri pekmezli suya batırıp susama bulayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "180 derece fırında 25 dakika pişirin."
+        }
+      ]
+    }
+  ]
+}

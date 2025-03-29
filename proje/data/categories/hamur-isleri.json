@@ -1,0 +1,168 @@
+{
+  "id": "6",
+  "category": "hamur-isleri",
+  "categoryName": "Hamur İşleri",
+  "recipes": [
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "601",
+      "name": "Poğaça",
+      "description": "Yumuşak ve lezzetli Türk poğaçası",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/pogaca_yza567.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT30M",
+      "cookTime": "PT25M",
+      "totalTime": "PT55M",
+      "keywords": "poğaça, hamur işi, peynirli poğaça",
+      "recipeYield": "12 servings",
+      "recipeCategory": "Hamur İşi",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "180 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "ratingCount": 145
+      },
+      "recipeIngredient": [
+        "4 su bardağı un",
+        "1 su bardağı ılık süt",
+        "125g tereyağı (oda sıcaklığında)",
+        "1 paket instant maya",
+        "1 adet yumurta",
+        "1 tatlı kaşığı tuz",
+        "1 tatlı kaşığı şeker",
+        "Peynir veya patates (iç malzeme için)",
+        "1 adet yumurta sarısı (üzeri için)",
+        "Çörek otu, susam (süslemek için)"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Unu Hazırla",
+          "text": "Unu geniş bir kaba alın ve ortasını açın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Maya Ekle",
+          "text": "Ilık sütü, mayayı, şekeri ekleyip karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Hamur Yap",
+          "text": "Tereyağını, yumurtayı ve tuzu ekleyip yumuşak bir hamur elde edin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Dinlendir",
+          "text": "Hamuru üzerini kapatıp 1 saat dinlendirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Doldur",
+          "text": "Hamurdan ceviz büyüklüğünde parçalar koparıp içlerine peynir veya patates doldurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Diz",
+          "text": "Yağlı kağıt serilmiş tepsiye dizin ve üzerine yumurta sarısı sürün."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Süsle",
+          "text": "Üzerlerine çörek otu ve susam serpin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "180 derece fırında 25 dakika pişirin."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "602",
+      "name": "Su Böreği",
+      "description": "Kat kat lezzet: Geleneksel su böreği",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/su-boregi_bcd890.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT60M",
+      "cookTime": "PT40M",
+      "totalTime": "PT100M",
+      "keywords": "su böreği, hamur işi, peynirli börek",
+      "recipeYield": "8 servings",
+      "recipeCategory": "Hamur İşi",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "320 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.9,
+        "ratingCount": 167
+      },
+      "recipeIngredient": [
+        "500g yufka",
+        "300g beyaz peynir",
+        "1/2 demet maydanoz",
+        "3 yemek kaşığı zeytinyağı",
+        "Tuz, karabiber",
+        "1 tencere kaynar su"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "İç Harcı Hazırla",
+          "text": "Peyniri ezin, maydanozu kıyın ve karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Yufkayı Ser",
+          "text": "Yufkaları tezgaha serin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Haşla",
+          "text": "Her bir yufkayı kaynar suda haşlayıp çıkarın ve süzün."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Yağla",
+          "text": "Yağlanmış tepsiye bir kat yufka serin ve üzerine yağ gezdirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Harcı Yay",
+          "text": "3-4 kat yufka serdikten sonra hazırladığınız peynirli harcı yayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Kalan Yufkaları Ekle",
+          "text": "Kalan yufkaları aynı şekilde haşlayıp, yağlayarak tepsiye dizin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "180 derece fırında altı üstü kızarana kadar pişirin."
+        }
+      ]
+    }
+  ]
+}

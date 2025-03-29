@@ -32,7 +32,7 @@ export default async function sitemap() {
   ];
 
   // Kategori sayfaları
-  const categories = getAllCategories();
+  const categories = await getAllCategories();
   const categoryPages = categories.map((category) => ({
     url: `${baseUrl}/kategori/${category.category}`,
     lastModified: new Date(),

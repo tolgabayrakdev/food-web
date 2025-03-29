@@ -1,0 +1,148 @@
+{
+  "id": "1",
+  "category": "ana-yemekler",
+  "categoryName": "Ana Yemekler",
+  "recipes": [
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "101",
+      "name": "Karnıyarık",
+      "description": "Patlıcan ile yapılan geleneksel Türk yemeği",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852654/karniyarik_znfhzh.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT20M",
+      "cookTime": "PT40M",
+      "totalTime": "PT60M",
+      "keywords": "karnıyarık, patlıcan, ana yemek",
+      "recipeYield": "4 servings",
+      "recipeCategory": "Ana Yemek",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "350 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "ratingCount": 125
+      },
+      "recipeIngredient": [
+        "6 adet patlıcan",
+        "300g kıyma",
+        "2 adet soğan",
+        "2 adet domates",
+        "2 adet yeşil biber",
+        "3 diş sarımsak",
+        "3 yemek kaşığı zeytinyağı",
+        "Tuz, karabiber, kırmızı biber"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Patlıcanları Hazırla",
+          "text": "Patlıcanları alacalı soyup, tuzlu suda bekletin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "İç Harcı Hazırla",
+          "text": "Kıymayı soğan, sarımsak ve baharatlarla kavurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Malzemeleri Ekle",
+          "text": "Domates ve biberleri ekleyip pişirmeye devam edin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Patlıcanları Doldur",
+          "text": "Patlıcanları kızartın ve ortalarını yarıp iç harcı doldurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "200 derece fırında 20-25 dakika pişirin."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "102",
+      "name": "Mantı",
+      "description": "Türk mutfağının sevilen hamur işi",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/manti_gicyxz.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT60M",
+      "cookTime": "PT20M",
+      "totalTime": "PT80M",
+      "keywords": "mantı, hamur işi, ana yemek",
+      "recipeYield": "6 servings",
+      "recipeCategory": "Ana Yemek",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "280 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.9,
+        "ratingCount": 98
+      },
+      "recipeIngredient": [
+        "3 su bardağı un",
+        "1 adet yumurta",
+        "250g kıyma",
+        "1 adet soğan",
+        "Tuz, karabiber",
+        "Yoğurt",
+        "Tereyağı",
+        "Kırmızı biber"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Hamur Hazırla",
+          "text": "Unu, yumurtayı, tuzu ve suyu karıştırıp hamur yapın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Hamuru Dinlendir",
+          "text": "Hamuru dinlendirip ince açın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "İç Harcı Hazırla",
+          "text": "Kıyma, soğan ve baharatları karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Mantıları Şekillendir",
+          "text": "Hamuru küçük karelere kesip içine harç koyun ve kapatın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "Kaynayan tuzlu suda mantıları haşlayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis Et",
+          "text": "Üzerine sarımsaklı yoğurt ve kırmızı biberli tereyağı gezdirin."
+        }
+      ]
+    }
+  ]
+}

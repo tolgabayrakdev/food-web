@@ -1,0 +1,146 @@
+{
+  "id": "5",
+  "category": "mezeler",
+  "categoryName": "Mezeler",
+  "recipes": [
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "501",
+      "name": "Humus",
+      "description": "Nohut püresi ile yapılan Orta Doğu mezesi",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742931187/2148648504_lcnduy.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Middle Eastern",
+      "prepTime": "PT15M",
+      "cookTime": "PT0M",
+      "totalTime": "PT15M",
+      "keywords": "humus, meze, nohut, tahin",
+      "recipeYield": "6 servings",
+      "recipeCategory": "Meze",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "150 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "ratingCount": 134
+      },
+      "recipeIngredient": [
+        "2 su bardağı haşlanmış nohut",
+        "2 diş sarımsak",
+        "3 yemek kaşığı tahin",
+        "1 adet limon suyu",
+        "3 yemek kaşığı zeytinyağı",
+        "1 tatlı kaşığı kimyon",
+        "Tuz",
+        "Pul biber ve maydanoz (süslemek için)"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Nohutları Ez",
+          "text": "Nohutları robottan geçirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Malzemeleri Ekle",
+          "text": "Sarımsak, tahin, limon suyu, zeytinyağı, kimyon ve tuzu ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Karıştır",
+          "text": "Tüm malzemeleri robottan tekrar geçirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Kıvamı Ayarla",
+          "text": "Kıvamı koyu ise biraz su ekleyerek tekrar karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Süsle",
+          "text": "Servis tabağına alıp üzerine zeytinyağı gezdirip pul biber ve maydanoz ile süsleyin."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "502",
+      "name": "Patlıcan Ezme",
+      "description": "Közlenmiş patlıcan ile yapılan geleneksel meze",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742931299/2148814530_w199ih.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT20M",
+      "cookTime": "PT15M",
+      "totalTime": "PT35M",
+      "keywords": "patlıcan ezme, meze, közlenmiş patlıcan",
+      "recipeYield": "6 servings",
+      "recipeCategory": "Meze",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "120 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.7,
+        "ratingCount": 98
+      },
+      "recipeIngredient": [
+        "3 adet patlıcan",
+        "2 diş sarımsak",
+        "1/2 demet maydanoz",
+        "2 yemek kaşığı zeytinyağı",
+        "1 adet limon suyu",
+        "Tuz, karabiber"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Patlıcanları Közle",
+          "text": "Patlıcanları közleyin ve kabuklarını soyun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Doğra",
+          "text": "Közlenmiş patlıcanları bıçakla küçük küçük doğrayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sarımsak Ekle",
+          "text": "Sarımsağı ezin ve patlıcana ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Maydanoz Ekle",
+          "text": "Maydanozu ince kıyın ve karışıma ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sos Ekle",
+          "text": "Zeytinyağı, limon suyu, tuz ve karabiber ekleyip karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis Et",
+          "text": "Servis tabağına alıp üzerine zeytinyağı gezdirin."
+        }
+      ]
+    }
+  ]
+}

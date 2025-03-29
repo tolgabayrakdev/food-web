@@ -24,6 +24,9 @@ const categoryIcons = {
 };
 
 export default function CategoryCard({ category }) {
+  // Get recipe count safely
+  const recipeCount = category.recipeCount || (category.recipes?.length || 0);
+  
   return (
     <Link href={`/kategori/${category.category}`}>
       <Card className="h-72 relative overflow-hidden group cursor-pointer transition-all duration-300 hover:shadow-xl border-0">
@@ -44,7 +47,7 @@ export default function CategoryCard({ category }) {
             {category.categoryName}
           </h3>
           <div className="flex justify-between items-center">
-            <p className="text-sm text-white/80">{category.recipes.length} tarif</p>
+            <p className="text-sm text-white/80">{recipeCount} tarif</p>
             <span className="text-xs px-3 py-1 bg-indigo-600/80 rounded-full group-hover:bg-indigo-500 transition-colors duration-300">
               Keşfet
             </span>

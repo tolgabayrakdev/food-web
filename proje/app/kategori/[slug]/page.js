@@ -2,11 +2,11 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RecipeCard from "@/components/RecipeCard";
-import { getCategoryBySlug, getAllCategories } from "@/lib/recipes";
+import { getCategoryBySlug, getAllCategories, createRecipeSlug } from "@/lib/recipes";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const category = getCategoryBySlug(slug);
+  const category = await getCategoryBySlug(slug);
   
   if (!category) {
     return {
@@ -20,8 +20,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export function generateStaticParams() {
-  const categories = getAllCategories();
+export async function generateStaticParams() {
+  const categories = await getAllCategories();
   
   return categories.map((category) => ({
     slug: category.category,
@@ -30,11 +30,22 @@ export function generateStaticParams() {
 
 export default async function CategoryPage({ params }) {
   const { slug } = await params;
-  const category = getCategoryBySlug(slug);
+  const category = await getCategoryBySlug(slug);
   
   if (!category) {
     notFound();
   }
+  
+  // Pre-compute slugs for all recipes
+  const recipesWithSlugs = await Promise.all(
+    category.recipes.map(async (recipe) => {
+      const recipeSlug = await createRecipeSlug(recipe.name || recipe.title);
+      return {
+        ...recipe,
+        slug: recipeSlug
+      };
+    })
+  );
   
   return (
     <div className="min-h-screen flex flex-col">
@@ -52,7 +63,7 @@ export default async function CategoryPage({ params }) {
         
         <div className="max-w-7xl mx-auto px-4 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {category.recipes.map((recipe) => (
+            {recipesWithSlugs.map((recipe) => (
               <RecipeCard key={recipe.id} recipe={recipe} categorySlug={category.category} />
             ))}
           </div>

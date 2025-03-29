@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "category": "ana-yemekler",
+    "categoryName": "Ana Yemekler",
+    "recipeCount": 2
+  },
+  {
+    "id": "2",
+    "category": "corbalar",
+    "categoryName": "Çorbalar",
+    "recipeCount": 2
+  },
+  {
+    "id": "3",
+    "category": "tatlilar",
+    "categoryName": "Tatlılar",
+    "recipeCount": 2
+  },
+  {
+    "id": "4",
+    "category": "salatalar",
+    "categoryName": "Salatalar",
+    "recipeCount": 1
+  },
+  {
+    "id": "5",
+    "category": "mezeler",
+    "categoryName": "Mezeler",
+    "recipeCount": 2
+  },
+  {
+    "id": "6",
+    "category": "hamur-isleri",
+    "categoryName": "Hamur İşleri",
+    "recipeCount": 2
+  },
+  {
+    "id": "7",
+    "category": "kahvaltiliklar",
+    "categoryName": "Kahvaltılıklar",
+    "recipeCount": 2
+  },
+  {
+    "id": "8",
+    "category": "atistirmaliklar",
+    "categoryName": "Atıştırmalıklar",
+    "recipeCount": 2
+  }
+]

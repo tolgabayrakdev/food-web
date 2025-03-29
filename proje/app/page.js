@@ -1,12 +1,11 @@
-"use client";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import CategoryCard from "@/components/CategoryCard";
 import { getAllCategories } from "@/lib/recipes";
 
-export default function Home() {
-  const categories = getAllCategories();
+export default async function Home() {
+  const categories = await getAllCategories();
 
   return (
     <div className="min-h-screen flex flex-col">

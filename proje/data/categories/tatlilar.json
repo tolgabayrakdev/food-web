@@ -1,0 +1,159 @@
+{
+  "id": "3",
+  "category": "tatlilar",
+  "categoryName": "Tatlılar",
+  "recipes": [
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "301",
+      "name": "Baklava",
+      "description": "Geleneksel Türk tatlısı",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742930668/6052_kxsb5b.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT60M",
+      "cookTime": "PT45M",
+      "totalTime": "PT105M",
+      "keywords": "baklava, tatlı, fıstıklı baklava",
+      "recipeYield": "12 servings",
+      "recipeCategory": "Tatlı",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "450 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.9,
+        "ratingCount": 89
+      },
+      "recipeIngredient": [
+        "500g yufka",
+        "300g tereyağı",
+        "300g ceviz içi",
+        "2 su bardağı şeker",
+        "1.5 su bardağı su",
+        "1 tatlı kaşığı limon suyu"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Tereyağını Hazırla",
+          "text": "Tereyağını eritin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Yufkayı Yerleştir",
+          "text": "Yufkayı tepsiye yerleştirirken aralarına tereyağı sürün."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Ceviz Ekle",
+          "text": "Her 3-4 katta bir ceviz serpin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Dilimle",
+          "text": "Hazırladığınız baklavaları pişmeden önce dilimleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "180 derece fırında altı üstü kızarana kadar pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Şerbet Hazırla",
+          "text": "Şeker ve suyu kaynatıp şerbet hazırlayın ve limon suyunu ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Şerbeti Dök",
+          "text": "Sıcak baklavaların üzerine soğuk şerbeti dökün."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "302",
+      "name": "Sütlaç",
+      "description": "Pirinçli süt tatlısı",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742930837/2457_hd6qy8.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT15M",
+      "cookTime": "PT45M",
+      "totalTime": "PT60M",
+      "keywords": "sütlaç, tatlı, fırında sütlaç",
+      "recipeYield": "8 servings",
+      "recipeCategory": "Tatlı",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "220 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "ratingCount": 112
+      },
+      "recipeIngredient": [
+        "1 litre süt",
+        "1/2 su bardağı pirinç",
+        "1 su bardağı şeker",
+        "1 yemek kaşığı nişasta",
+        "1 paket vanilya",
+        "Tarçın"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Pirinci Hazırla",
+          "text": "Pirinci yıkayıp süzün ve yumuşayana kadar haşlayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sütü Ekle",
+          "text": "Haşlanmış pirince sütü ekleyip karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Şeker Ekle",
+          "text": "Şekeri ekleyip kaynamaya bırakın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Nişasta Ekle",
+          "text": "Nişastayı az sütle ezip karışıma ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Vanilya Ekle",
+          "text": "Ocaktan alıp vanilyayı ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "Fırın kaplarına paylaştırıp fırında üzeri kızarana kadar pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis Et",
+          "text": "Soğuduktan sonra üzerine tarçın serperek servis yapın."
+        }
+      ]
+    }
+  ]
+}

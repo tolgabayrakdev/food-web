@@ -8,8 +8,8 @@ export const metadata = {
   description: "Türk mutfağının en lezzetli yemek tariflerini kategori kategoriye keşfedin.",
 };
 
-export default function CategoriesPage() {
-  const categories = getAllCategories();
+export default async function CategoriesPage() {
+  const categories = await getAllCategories();
   
   return (
     <div className="min-h-screen flex flex-col">
@@ -68,7 +68,7 @@ export default function CategoriesPage() {
                   </p>
                   <div className="flex items-center mt-3">
                     <span className="text-sm bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">
-                      {category.recipes.length} tarif
+                      {category.recipeCount || (category.recipes?.length || 0)} tarif
                     </span>
                     <span className="ml-auto text-indigo-600 text-sm font-medium cursor-pointer hover:text-indigo-800 transition-colors">
                       Tümünü gör →

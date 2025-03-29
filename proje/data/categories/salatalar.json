@@ -1,0 +1,149 @@
+{
+  "id": "4",
+  "category": "salatalar",
+  "categoryName": "Salatalar",
+  "recipes": [
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "401",
+      "name": "Çoban Salatası",
+      "description": "Klasik Türk salatası",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742931076/2148814449_lgja2s.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT15M",
+      "cookTime": "PT0M",
+      "totalTime": "PT15M",
+      "keywords": "çoban salatası, salata, domates, salatalık",
+      "recipeYield": "4 servings",
+      "recipeCategory": "Salata",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "80 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.7,
+        "ratingCount": 167
+      },
+      "recipeIngredient": [
+        "3 adet domates",
+        "2 adet salatalık",
+        "1 adet soğan",
+        "1 adet yeşil biber",
+        "1/2 demet maydanoz",
+        "Zeytinyağı",
+        "Limon suyu",
+        "Tuz"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Sebzeleri Doğra",
+          "text": "Domatesleri, salatalıkları, soğanı ve biberi küp küp doğrayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Maydanoz",
+          "text": "Maydanozu ince ince kıyın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Karıştır",
+          "text": "Tüm malzemeleri bir kaseye alın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sos Ekle",
+          "text": "Zeytinyağı, limon suyu ve tuzu ekleyip karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Dinlendir",
+          "text": "Servis etmeden önce 15 dakika buzdolabında dinlendirin."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "402",
+      "name": "Gavurdağı Salatası",
+      "description": "Gaziantep'in meşhur baharatlı salatası",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1743279937/gevurdagi_c8ry2r.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-05-15",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT20M",
+      "cookTime": "PT0M",
+      "totalTime": "PT20M",
+      "keywords": "gavurdağı salatası, ceviz, nar ekşisi, sumak",
+      "recipeYield": "4 servings",
+      "recipeCategory": "Salata",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "120 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.9,
+        "ratingCount": 103
+      },
+      "recipeIngredient": [
+        "4 adet domates",
+        "2 adet kuru soğan",
+        "2 adet sivri biber",
+        "1/2 demet maydanoz",
+        "1/2 çay bardağı ceviz içi",
+        "1 yemek kaşığı sumak",
+        "3 yemek kaşığı nar ekşisi",
+        "4 yemek kaşığı zeytinyağı",
+        "Tuz"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Sebzeleri Hazırla",
+          "text": "Domatesleri, soğanları ve biberleri çok küçük küpler halinde doğrayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Maydanozu Kıy",
+          "text": "Maydanozu ince ince kıyın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Cevizleri Ekle",
+          "text": "Ceviz içlerini hafifçe kırarak ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sos Hazırla",
+          "text": "Zeytinyağı, nar ekşisi, sumak ve tuzu karıştırarak sos hazırlayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Karıştır",
+          "text": "Tüm malzemeleri derin bir kapta karıştırın ve sosu ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis",
+          "text": "Üzerine biraz daha sumak serperek servis edin."
+        }
+      ]
+    }
+  ]
+}

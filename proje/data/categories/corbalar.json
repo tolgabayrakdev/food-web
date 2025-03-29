@@ -1,0 +1,152 @@
+{
+  "id": "2",
+  "category": "corbalar",
+  "categoryName": "Çorbalar",
+  "recipes": [
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "201",
+      "name": "Mercimek Çorbası",
+      "description": "Klasik Türk mutfağının vazgeçilmez çorbası",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852846/mercimek-corbasi_ryyuxc.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT10M",
+      "cookTime": "PT40M",
+      "totalTime": "PT50M",
+      "keywords": "mercimek çorbası, çorba, mercimek",
+      "recipeYield": "6 servings",
+      "recipeCategory": "Çorba",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "180 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.7,
+        "ratingCount": 156
+      },
+      "recipeIngredient": [
+        "1.5 su bardağı kırmızı mercimek",
+        "1 adet soğan",
+        "1 adet havuç",
+        "1 adet patates",
+        "1 yemek kaşığı tereyağı",
+        "Tuz, karabiber, kırmızı biber",
+        "Limon"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Mercimeği Hazırla",
+          "text": "Mercimeği yıkayıp süzün."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sebzeleri Hazırla",
+          "text": "Sebzeleri doğrayıp mercimekle beraber tencereye alın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "Üzerini geçecek kadar su ekleyip pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Blenderdan Geçir",
+          "text": "Mercimek ve sebzeler yumuşayınca blenderdan geçirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Tereyağı Ekle",
+          "text": "Ayrı bir tavada tereyağını eritip kırmızı biberi yakın ve çorbaya ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis Et",
+          "text": "Servis ederken üzerine limon sıkın."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "202",
+      "name": "Ezogelin Çorbası",
+      "description": "Mercimek ve bulgurla hazırlanan lezzetli çorba",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852846/mercimek-corbasi_ryyuxc.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT15M",
+      "cookTime": "PT45M",
+      "totalTime": "PT60M",
+      "keywords": "ezogelin çorbası, çorba, mercimek, bulgur",
+      "recipeYield": "6 servings",
+      "recipeCategory": "Çorba",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "200 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.6,
+        "ratingCount": 142
+      },
+      "recipeIngredient": [
+        "1 su bardağı kırmızı mercimek",
+        "1/4 su bardağı pirinç",
+        "1/4 su bardağı bulgur",
+        "1 adet soğan",
+        "2 diş sarımsak",
+        "2 yemek kaşığı domates salçası",
+        "Nane, kırmızı biber, karabiber",
+        "Tereyağı"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Soğan ve Sarımsak",
+          "text": "Soğan ve sarımsağı yağda kavurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Salça Ekle",
+          "text": "Salçayı ekleyip karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Malzemeleri Ekle",
+          "text": "Yıkanmış mercimek, pirinç ve bulguru ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "Üzerine su ekleyip kaynatın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Blenderdan Geçir",
+          "text": "Malzemeler yumuşayınca blenderdan geçirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Süsle",
+          "text": "Üzerine tereyağında kızdırılmış nane ve kırmızı biber ekleyin."
+        }
+      ]
+    }
+  ]
+}

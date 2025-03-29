@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RecipeCard from "@/components/RecipeCard";
 import SearchBar from "@/components/SearchBar";
-import { searchRecipes } from "@/lib/recipes";
+import { searchRecipes } from "@/lib/client-recipes";
 
 // Component that uses useSearchParams
 function SearchContent() {
@@ -19,8 +19,8 @@ function SearchContent() {
   useEffect(() => {
     setIsLoading(true);
     // Small timeout to allow for better UX during typing
-    const timeoutId = setTimeout(() => {
-      const searchResults = searchRecipes(query);
+    const timeoutId = setTimeout(async () => {
+      const searchResults = await searchRecipes(query);
       setResults(searchResults);
       setIsLoading(false);
     }, 150);

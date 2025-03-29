@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Card } from "./ui/card";
-import { createRecipeSlug } from "@/lib/recipes";
 
 export default function RecipeCard({ recipe, categorySlug }) {
-  const recipeSlug = recipe.slug || createRecipeSlug(recipe.name);
+  // Fallback for recipes without slug (should not happen after our changes)
+  const recipeSlug = recipe.slug || recipe.name?.toLowerCase().replace(/\s+/g, '-');
   
   return (
     <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">

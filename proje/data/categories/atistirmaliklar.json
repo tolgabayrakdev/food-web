@@ -1,0 +1,165 @@
+{
+  "id": "8",
+  "category": "atistirmaliklar",
+  "categoryName": "Atıştırmalıklar",
+  "recipes": [
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "801",
+      "name": "Patates Kızartması",
+      "description": "Ev yapımı çıtır patates kızartması",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/patates-kizartmasi_klm789.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT10M",
+      "cookTime": "PT15M",
+      "totalTime": "PT25M",
+      "keywords": "patates kızartması, atıştırmalık, çıtır patates",
+      "recipeYield": "4 servings",
+      "recipeCategory": "Atıştırmalık",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "280 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.7,
+        "ratingCount": 134
+      },
+      "recipeIngredient": [
+        "6 adet orta boy patates",
+        "Kızartmak için sıvı yağ",
+        "Tuz",
+        "İsteğe bağlı baharatlar (kekik, pul biber, vb.)"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Patatesleri Hazırla",
+          "text": "Patatesleri soyun ve çubuk şeklinde kesin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Beklet",
+          "text": "Kesilen patatesleri soğuk suda 30 dakika bekletin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Kurut",
+          "text": "Patatesleri sudan çıkarıp kağıt havlu ile iyice kurulayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Yağı Isıt",
+          "text": "Derin bir tavada yağı ısıtın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Kızart",
+          "text": "Patatesleri kızgın yağda altın sarısı renk alana kadar kızartın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Süz",
+          "text": "Kızaran patatesleri havlu kağıt serilmiş tabağa alın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Baharatla",
+          "text": "Sıcakken tuz ve isteğe bağlı baharatları ekleyin."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "802",
+      "name": "Çiğ Köfte",
+      "description": "Etsiz, baharatlı bulgur köftesi",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/cig-kofte_nop012.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT40M",
+      "cookTime": "PT0M",
+      "totalTime": "PT40M",
+      "keywords": "çiğ köfte, atıştırmalık, bulgur köftesi",
+      "recipeYield": "6 servings",
+      "recipeCategory": "Atıştırmalık",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "160 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "ratingCount": 178
+      },
+      "recipeIngredient": [
+        "2 su bardağı ince bulgur",
+        "1 su bardağı ince doğranmış soğan",
+        "3 diş sarımsak",
+        "2 yemek kaşığı biber salçası",
+        "1 yemek kaşığı domates salçası",
+        "1/2 demet maydanoz",
+        "1 adet limon suyu",
+        "2 yemek kaşığı zeytinyağı",
+        "Tuz, karabiber, kimyon, pul biber"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Bulguru Hazırla",
+          "text": "Bulguru geniş bir kaba alın ve üzerini hafifçe geçecek kadar su ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Beklet",
+          "text": "Bulgur suyu çekene kadar bekletin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sebzeleri Hazırla",
+          "text": "Soğanı ve sarımsağı rondodan geçirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Malzemeleri Ekle",
+          "text": "Salçaları, zeytinyağını ve baharatları ekleyip iyice yoğurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Karıştır",
+          "text": "Karışımı bulgura ekleyin ve yoğurmaya devam edin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Son Malzemeleri Ekle",
+          "text": "İnce kıyılmış maydanozu ve limon suyunu ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Yoğur",
+          "text": "Hamur kıvam alana kadar yoğurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis Et",
+          "text": "Köfteleri şekillendirip marul yaprakları ile servis yapın."
+        }
+      ]
+    }
+  ]
+}

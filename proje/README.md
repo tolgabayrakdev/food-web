@@ -1,3 +1,115 @@
+# Lezzet Hazinesi - Türk Yemekleri Web Sitesi
+
+## Veri Yapısı
+
+### Kategoriler ve Tarifler
+
+Tüm yemek tarifleri ve kategorileri `data/categories` dizininde ayrı JSON dosyaları olarak tutulmaktadır:
+
+- `index.json` - Tüm kategorilerin listesi ve meta bilgileri
+- `[KATEGORI_ADI].json` - Her kategori için özel dosya (örn: `tatlilar.json`, `corbalar.json`)
+
+### Dosya Yapısı
+
+```
+data/
+  categories/
+    index.json                # Kategori indeksi
+    ana-yemekler.json         # Ana yemekler kategorisi
+    corbalar.json             # Çorbalar kategorisi
+    tatlilar.json             # Tatlılar kategorisi
+    ...
+```
+
+### Kategori Dosya Formatı
+
+Her kategori dosyası aşağıdaki yapıdadır:
+
+```json
+{
+  "id": "3",
+  "category": "tatlilar",
+  "categoryName": "Tatlılar",
+  "recipes": [
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "301",
+      "name": "Baklava",
+      "description": "...",
+      ...
+    },
+    ...
+  ]
+}
+```
+
+## Veri İşlemleri
+
+### Server ve Client Kullanımı
+
+Veri işlemleri için iki farklı modül bulunmaktadır:
+
+1. **Server-Side (lib/recipes.js)**: Server-side bileşenlerde kullanılır.
+   - `'use server'` direktifi ile işaretlenmiştir
+   - Dosya sistemi işlemleri yapabilir
+   - Async fonksiyonlar içerir
+
+2. **Client-Side (lib/client-recipes.js)**: Client-side bileşenlerde kullanılır.
+   - Server fonksiyonlarını çağırır
+   - Tarayıcıdan kullanılabilir
+   - React Hook'larda kullanılabilir
+
+### Kullanım Örneği
+
+**Server Component'lerde:**
+```jsx
+import { getAllCategories } from "@/lib/recipes";
+
+export default async function Page() {
+  const categories = await getAllCategories();
+  return (
+    // ...
+  );
+}
+```
+
+**Client Component'lerde:**
+```jsx
+"use client";
+import { useEffect, useState } from "react";
+import { getAllCategories } from "@/lib/client-recipes";
+
+export default function ClientPage() {
+  const [categories, setCategories] = useState([]);
+  
+  useEffect(() => {
+    const loadData = async () => {
+      const data = await getAllCategories();
+      setCategories(data);
+    };
+    loadData();
+  }, []);
+  
+  return (
+    // ...
+  );
+}
+```
+
+### Kategorilerin Güncellenmesi
+
+Yeni bir tarif veya kategori eklemek için ilgili JSON dosyasını düzenleyin. Eğer tüm veri yapısını güncellemek gerekirse:
+
+1. `data/recipes.json` dosyasını güncelleyin
+2. `scripts/split-recipes.js` betiğini çalıştırın:
+
+```
+node scripts/split-recipes.js
+```
+
+Bu komut, `recipes.json` dosyasını ayrı kategori dosyalarına böler ve indeks dosyasını günceller.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

@@ -8,7 +8,7 @@ import { getRecipeBySlug, getCategoryBySlug, getAllCategories, createRecipeSlug 
 export async function generateMetadata({ params }) {
   const { slug, recipeSlug } = await params;
   
-  const recipe = getRecipeBySlug(slug, recipeSlug);
+  const recipe = await getRecipeBySlug(slug, recipeSlug);
   
   if (!recipe) {
     return {
@@ -22,22 +22,34 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export function generateStaticParams() {
-  const categories = getAllCategories();
+export async function generateStaticParams() {
+  const categoriesIndex = await getAllCategories();
+  const params = [];
   
-  return categories.flatMap((category) => 
-    category.recipes.map((recipe) => ({
-      slug: category.category,
-      recipeSlug: createRecipeSlug(recipe.name),
-    }))
-  );
+  // Loop through each category in the index
+  for (const categoryInfo of categoriesIndex) {
+    // Load the full category data with recipes
+    const category = await getCategoryBySlug(categoryInfo.category);
+    if (!category || !category.recipes) continue;
+    
+    // Generate slugs for each recipe
+    for (const recipe of category.recipes) {
+      const slug = await createRecipeSlug(recipe.name || recipe.title);
+      params.push({
+        slug: category.category,
+        recipeSlug: slug,
+      });
+    }
+  }
+  
+  return params;
 }
 
 export default async function RecipePage({ params }) {
   const { slug } = await params;
   const { recipeSlug } = await params;
-  const recipe = getRecipeBySlug(slug, recipeSlug);
-  const category = getCategoryBySlug(slug);
+  const recipe = await getRecipeBySlug(slug, recipeSlug);
+  const category = await getCategoryBySlug(slug);
   
   if (!recipe || !category) {
     notFound();
