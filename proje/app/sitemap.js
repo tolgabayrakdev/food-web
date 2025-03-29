@@ -1,4 +1,4 @@
-import { getAllCategories } from "@/lib/recipes";
+import { getAllCategories, getCategoryBySlug, createRecipeSlug } from "@/lib/recipes";
 
 export default async function sitemap() {
   const baseUrl = "https://lezzetdunyasi.com";
@@ -32,8 +32,8 @@ export default async function sitemap() {
   ];
 
   // Kategori sayfaları
-  const categories = await getAllCategories();
-  const categoryPages = categories.map((category) => ({
+  const categoriesInfo = await getAllCategories();
+  const categoryPages = categoriesInfo.map((category) => ({
     url: `${baseUrl}/kategori/${category.category}`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
@@ -41,14 +41,23 @@ export default async function sitemap() {
   }));
 
   // Tarif sayfaları
-  const recipePages = categories.flatMap((category) =>
-    category.recipes.map((recipe) => ({
-      url: `${baseUrl}/kategori/${category.category}/${recipe.slug || recipe.name.toLowerCase().replace(/\s+/g, '-')}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.6,
-    }))
-  );
+  const recipePages = [];
+  
+  for (const categoryInfo of categoriesInfo) {
+    const category = await getCategoryBySlug(categoryInfo.category);
+    if (category && category.recipes) {
+      for (const recipe of category.recipes) {
+        const recipeName = recipe.name || recipe.title || '';
+        const slug = await createRecipeSlug(recipeName);
+        recipePages.push({
+          url: `${baseUrl}/kategori/${category.category}/${slug}`,
+          lastModified: new Date(),
+          changeFrequency: 'weekly',
+          priority: 0.6,
+        });
+      }
+    }
+  }
 
   return [...staticPages, ...categoryPages, ...recipePages];
 } 
