@@ -7,7 +7,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "101",
-      "name": "Karnıyarık",
+      "name": "Karnıyarık Tarifi",
       "description": "Patlıcan ile yapılan geleneksel Türk yemeği",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852654/karniyarik_znfhzh.jpg"
@@ -75,7 +75,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "102",
-      "name": "Mantı",
+      "name": "Mantı Tarifi",
       "description": "Türk mutfağının sevilen hamur işi",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/manti_gicyxz.jpg"
@@ -148,7 +148,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "103",
-      "name": "İmam Bayıldı",
+      "name": "İmam Bayıldı Tarifi",
       "description": "Zeytinyağlı patlıcan yemeği",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1743450903/imam-bayildi_tju1jd.jpg"
@@ -221,7 +221,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "104",
-      "name": "İçli Köfte",
+      "name": "İçli Köfte Tarifi",
       "description": "Bulgur ve kıyma ile hazırlanan geleneksel Türk yemeği",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1743451003/icli-kofte_q7imfw.jpg"

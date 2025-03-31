@@ -7,7 +7,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "801",
-      "name": "Patates Kızartması",
+      "name": "Patates Kızartması Tarifi",
       "description": "Ev yapımı çıtır patates kızartması",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/patates-kizartmasi_klm789.jpg"
@@ -81,7 +81,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "802",
-      "name": "Çiğ Köfte",
+      "name": "Çiğ Köfte Tarifi",
       "description": "Etsiz, baharatlı bulgur köftesi",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/cig-kofte_nop012.jpg"

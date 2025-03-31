@@ -7,7 +7,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "401",
-      "name": "Çoban Salatası",
+      "name": "Çoban Salatası Tarifi",
       "description": "Klasik Türk salatası",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1742931076/2148814449_lgja2s.jpg"
@@ -75,7 +75,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "402",
-      "name": "Gavurdağı Salatası",
+      "name": "Gavurdağı Salatası Tarifi",
       "description": "Gaziantep'in meşhur baharatlı salatası",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1743279937/gevurdagi_c8ry2r.jpg"

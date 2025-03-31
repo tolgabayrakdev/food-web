@@ -7,7 +7,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "701",
-      "name": "Menemen",
+      "name": "Menemen Tarifi",
       "description": "Domates, biber ve yumurta ile hazırlanan klasik Türk kahvaltılığı",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/menemen_efg123.jpg"
@@ -84,7 +84,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "702",
-      "name": "Simit",
+      "name": "Simit Tarifi",
       "description": "Susamlı, gevrek Türk gevreği",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852216/simit_hij456.jpg"

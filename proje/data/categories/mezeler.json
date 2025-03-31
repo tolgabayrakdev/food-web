@@ -7,7 +7,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "501",
-      "name": "Humus",
+      "name": "Humus Tarifi",
       "description": "Nohut püresi ile yapılan Orta Doğu mezesi",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1742931187/2148648504_lcnduy.jpg"
@@ -75,7 +75,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "502",
-      "name": "Patlıcan Ezme",
+      "name": "Patlıcan Ezme Tarifi",
       "description": "Közlenmiş patlıcan ile yapılan geleneksel meze",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1742931299/2148814530_w199ih.jpg"

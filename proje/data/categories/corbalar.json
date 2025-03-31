@@ -7,7 +7,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "201",
-      "name": "Mercimek Çorbası",
+      "name": "Mercimek Çorbası Tarifi",
       "description": "Klasik Türk mutfağının vazgeçilmez çorbası",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852846/mercimek-corbasi_ryyuxc.jpg"
@@ -79,7 +79,7 @@
       "@context": "https://schema.org/",
       "@type": "Recipe",
       "id": "202",
-      "name": "Ezogelin Çorbası",
+      "name": "Ezogelin Çorbası Tarifi",
       "description": "Mercimek ve bulgurla hazırlanan lezzetli çorba",
       "image": [
         "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852846/mercimek-corbasi_ryyuxc.jpg"
