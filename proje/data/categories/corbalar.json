@@ -147,6 +147,145 @@
           "text": "Üzerine tereyağında kızdırılmış nane ve kırmızı biber ekleyin."
         }
       ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "203",
+      "name": "Yayla Çorbası",
+      "description": "Yoğurt ve pirinçle hazırlanan geleneksel Türk çorbası",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1743450341/yayla_bhkps1.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT10M",
+      "cookTime": "PT30M",
+      "totalTime": "PT40M",
+      "keywords": "yayla çorbası, yoğurt çorbası, çorba",
+      "recipeYield": "4 servings",
+      "recipeCategory": "Çorba",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "150 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.5,
+        "ratingCount": 98
+      },
+      "recipeIngredient": [
+        "1 su bardağı pirinç",
+        "2 su bardağı yoğurt",
+        "1 adet yumurta",
+        "2 yemek kaşığı un",
+        "1 yemek kaşığı tereyağı",
+        "Nane, kırmızı biber",
+        "Tuz"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Pirinci Hazırla",
+          "text": "Pirinci yıkayıp haşlayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Yoğurtlu Karışım",
+          "text": "Yoğurdu, yumurtayı ve unu çırpın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Birleştir",
+          "text": "Haşlanmış pirinci yoğurtlu karışıma ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "Üzerine su ekleyip kaynatın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Süsle",
+          "text": "Üzerine tereyağında kızdırılmış nane ve kırmızı biber ekleyin."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "204",
+      "name": "Domates Çorbası",
+      "description": "Taze domateslerle hazırlanan lezzetli çorba",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1743450393/domates_tfb5en.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT15M",
+      "cookTime": "PT35M",
+      "totalTime": "PT50M",
+      "keywords": "domates çorbası, çorba, domates",
+      "recipeYield": "4 servings",
+      "recipeCategory": "Çorba",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "120 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.4,
+        "ratingCount": 85
+      },
+      "recipeIngredient": [
+        "4 adet domates",
+        "1 adet soğan",
+        "2 yemek kaşığı tereyağı",
+        "2 yemek kaşığı un",
+        "1 tatlı kaşığı tuz",
+        "Karabiber",
+        "Fesleğen"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Domatesleri Hazırla",
+          "text": "Domatesleri soyup küp küp doğrayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Soğan",
+          "text": "Soğanı yemeklik doğrayıp tereyağında kavurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Un Ekle",
+          "text": "Una ekleyip kavurmaya devam edin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Domatesleri Ekle",
+          "text": "Doğranmış domatesleri ekleyip pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Blenderdan Geçir",
+          "text": "Malzemeler yumuşayınca blenderdan geçirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Süsle",
+          "text": "Üzerine fesleğen yaprakları ekleyin."
+        }
+      ]
     }
   ]
 }

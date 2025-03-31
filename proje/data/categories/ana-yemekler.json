@@ -143,6 +143,152 @@
           "text": "Üzerine sarımsaklı yoğurt ve kırmızı biberli tereyağı gezdirin."
         }
       ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "103",
+      "name": "İmam Bayıldı",
+      "description": "Zeytinyağlı patlıcan yemeği",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852654/imam-bayildi_znfhzh.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT30M",
+      "cookTime": "PT45M",
+      "totalTime": "PT75M",
+      "keywords": "imam bayıldı, patlıcan, zeytinyağlı",
+      "recipeYield": "4 servings",
+      "recipeCategory": "Ana Yemek",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "280 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.7,
+        "ratingCount": 142
+      },
+      "recipeIngredient": [
+        "6 adet patlıcan",
+        "3 adet soğan",
+        "4 adet domates",
+        "4 adet sivri biber",
+        "4 diş sarımsak",
+        "1 demet maydanoz",
+        "1 su bardağı zeytinyağı",
+        "Tuz, karabiber"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Patlıcanları Hazırla",
+          "text": "Patlıcanları alacalı soyup, tuzlu suda bekletin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Patlıcanları Kızart",
+          "text": "Patlıcanları zeytinyağında kızartın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "İç Harcı Hazırla",
+          "text": "Soğanları kavurup, domates ve biberleri ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sarımsak Ekle",
+          "text": "Sarımsakları ekleyip pişirmeye devam edin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Patlıcanları Doldur",
+          "text": "Patlıcanları ortadan yarıp iç harcı doldurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "Tepsiye dizip 180 derece fırında 20 dakika pişirin."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "104",
+      "name": "İçli Köfte",
+      "description": "Bulgur ve kıyma ile hazırlanan geleneksel Türk yemeği",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742852654/icli-kofte_znfhzh.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT45M",
+      "cookTime": "PT30M",
+      "totalTime": "PT75M",
+      "keywords": "içli köfte, bulgur, kıyma",
+      "recipeYield": "6 servings",
+      "recipeCategory": "Ana Yemek",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "320 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "ratingCount": 167
+      },
+      "recipeIngredient": [
+        "2 su bardağı ince bulgur",
+        "1 su bardağı kıyma",
+        "1 adet soğan",
+        "2 diş sarımsak",
+        "1 demet maydanoz",
+        "Tuz, karabiber, pul biber",
+        "Ceviz içi",
+        "Karabiber"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Bulguru Islat",
+          "text": "Bulguru ılık suda ıslatın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Dış Harcı Hazırla",
+          "text": "Bulgur, kıyma, soğan ve baharatları yoğurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "İç Harcı Hazırla",
+          "text": "Kıyma, soğan, ceviz ve baharatları kavurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Köfteleri Şekillendir",
+          "text": "Dış harcı yumurta büyüklüğünde parçalara ayırıp içine harç koyun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "Köfteleri kızgın yağda kızartın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis Et",
+          "text": "Sıcak servis yapın."
+        }
+      ]
     }
   ]
 }

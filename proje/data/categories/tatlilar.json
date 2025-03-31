@@ -154,6 +154,165 @@
           "text": "Soğuduktan sonra üzerine tarçın serperek servis yapın."
         }
       ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "303",
+      "name": "Künefe",
+      "description": "Kadayıf ve peynirle hazırlanan geleneksel Türk tatlısı",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742930837/kunefe_ryyuxc.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT30M",
+      "cookTime": "PT20M",
+      "totalTime": "PT50M",
+      "keywords": "künefe, tatlı, peynirli künefe",
+      "recipeYield": "6 servings",
+      "recipeCategory": "Tatlı",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "380 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "ratingCount": 156
+      },
+      "recipeIngredient": [
+        "500g kadayıf",
+        "300g künefe peyniri",
+        "200g tereyağı",
+        "2 su bardağı şeker",
+        "1.5 su bardağı su",
+        "Antep fıstığı",
+        "Kaymak"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Kadayıfı Hazırla",
+          "text": "Kadayıfı tepsiye yerleştirin ve arasına peyniri yerleştirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Tereyağı Ekle",
+          "text": "Eritilmiş tereyağını kadayıfın üzerine gezdirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "180 derece fırında altı üstü kızarana kadar pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Şerbet Hazırla",
+          "text": "Şeker ve suyu kaynatıp şerbet hazırlayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Şerbeti Dök",
+          "text": "Sıcak künefenin üzerine soğuk şerbeti dökün."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Süsle",
+          "text": "Üzerine kaymak ve dövülmüş Antep fıstığı ekleyin."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "304",
+      "name": "Kazandibi",
+      "description": "Sütlaç türü, altı karamelize edilmiş geleneksel tatlı",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1742930837/kazandibi_ryyuxc.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT20M",
+      "cookTime": "PT60M",
+      "totalTime": "PT80M",
+      "keywords": "kazandibi, tatlı, sütlaç",
+      "recipeYield": "8 servings",
+      "recipeCategory": "Tatlı",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "280 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.7,
+        "ratingCount": 134
+      },
+      "recipeIngredient": [
+        "1 litre süt",
+        "1/2 su bardağı pirinç",
+        "1 su bardağı şeker",
+        "2 yemek kaşığı nişasta",
+        "1 paket vanilya",
+        "1 yemek kaşığı tereyağı",
+        "Tarçın"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Pirinci Hazırla",
+          "text": "Pirinci yıkayıp süzün ve yumuşayana kadar haşlayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sütü Ekle",
+          "text": "Haşlanmış pirince sütü ekleyip karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Şeker Ekle",
+          "text": "Şekeri ekleyip kaynamaya bırakın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Nişasta Ekle",
+          "text": "Nişastayı az sütle ezip karışıma ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Vanilya Ekle",
+          "text": "Ocaktan alıp vanilyayı ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Tepsiyi Hazırla",
+          "text": "Tepsiyi tereyağı ile yağlayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "Sütlacı tepsiye döküp fırında üzeri kızarana kadar pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Karamelize Et",
+          "text": "Altını karamelize etmek için fırının alt kısmını açın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis Et",
+          "text": "Soğuduktan sonra üzerine tarçın serperek servis yapın."
+        }
+      ]
     }
   ]
 }
