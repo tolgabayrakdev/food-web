@@ -289,6 +289,158 @@
           "text": "Sıcak servis yapın."
         }
       ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "105",
+      "name": "Kuru Fasulye Tarifi",
+      "description": "Geleneksel Türk mutfağının vazgeçilmez yemeği",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1743535906/kuru-fasulye_f187w2.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT20M",
+      "cookTime": "PT90M",
+      "totalTime": "PT110M",
+      "keywords": "kuru fasulye, ana yemek, geleneksel yemek",
+      "recipeYield": "6 servings",
+      "recipeCategory": "Ana Yemek",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "290 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.9,
+        "ratingCount": 189
+      },
+      "recipeIngredient": [
+        "500g kuru fasulye",
+        "2 adet soğan",
+        "2 yemek kaşığı domates salçası",
+        "3 yemek kaşığı sıvı yağ",
+        "2 diş sarımsak",
+        "1 tatlı kaşığı tuz",
+        "Karabiber, pul biber",
+        "Maydanoz"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Fasulyeyi Hazırla",
+          "text": "Fasulyeyi bir gece önceden ıslatın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Soğanları Kavur",
+          "text": "Soğanları yağda pembeleşene kadar kavurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Salça Ekle",
+          "text": "Salçayı ekleyip kavurmaya devam edin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Fasulyeyi Ekle",
+          "text": "Fasulyeyi ekleyip üzerini geçecek kadar su ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "Kısık ateşte fasulyeler yumuşayana kadar pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Süsle",
+          "text": "Üzerine maydanoz serperek servis yapın."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "106",
+      "name": "Lahmacun Tarifi",
+      "description": "İnce hamur üzerine kıymalı harç ile hazırlanan geleneksel Türk pizzası",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1743535959/lahmacun_p2xhft.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT40M",
+      "cookTime": "PT20M",
+      "totalTime": "PT60M",
+      "keywords": "lahmacun, kıyma, hamur işi",
+      "recipeYield": "8 servings",
+      "recipeCategory": "Ana Yemek",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "250 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "ratingCount": 145
+      },
+      "recipeIngredient": [
+        "3 su bardağı un",
+        "1 adet yumurta",
+        "1 tatlı kaşığı tuz",
+        "300g kıyma",
+        "2 adet soğan",
+        "2 adet domates",
+        "2 adet sivri biber",
+        "Maydanoz, pul biber",
+        "Karabiber"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Hamur Hazırla",
+          "text": "Un, yumurta, tuz ve su ile hamur yapın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Hamuru Dinlendir",
+          "text": "Hamuru 30 dakika dinlendirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "İç Harcı Hazırla",
+          "text": "Kıyma, soğan, domates ve baharatları karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Hamuru Aç",
+          "text": "Hamuru ince açın ve küçük daireler kesin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Harcı Yay",
+          "text": "Her daireye ince bir tabaka harç yayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "250 derece fırında 5-7 dakika pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis Et",
+          "text": "Sıcak servis yapın."
+        }
+      ]
     }
   ]
 }

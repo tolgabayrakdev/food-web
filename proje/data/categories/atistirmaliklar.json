@@ -160,6 +160,90 @@
           "text": "Köfteleri şekillendirip marul yaprakları ile servis yapın."
         }
       ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "803",
+      "name": "Acılı Ezme Tarifi",
+      "description": "Domates, biber ve soğan ile hazırlanan lezzetli bir meze",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1743536051/acili-ezme_nsvjni.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT20M",
+      "cookTime": "PT0M",
+      "totalTime": "PT20M",
+      "keywords": "acılı ezme, meze, atıştırmalık",
+      "recipeYield": "4 servings",
+      "recipeCategory": "Atıştırmalık",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "120 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.6,
+        "ratingCount": 156
+      },
+      "recipeIngredient": [
+        "4 adet domates",
+        "2 adet sivri biber",
+        "1 adet kırmızı biber",
+        "1 adet soğan",
+        "2 diş sarımsak",
+        "1 demet maydanoz",
+        "2 yemek kaşığı zeytinyağı",
+        "1 adet limon suyu",
+        "Tuz, pul biber"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Sebzeleri Hazırla",
+          "text": "Domatesleri, biberleri ve soğanı küp küp doğrayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sarımsak Ekle",
+          "text": "Sarımsakları ince ince doğrayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Maydanoz Ekle",
+          "text": "Maydanozu ince ince kıyın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Karıştır",
+          "text": "Tüm malzemeleri geniş bir kapta karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sos Ekle",
+          "text": "Zeytinyağı ve limon suyunu ekleyip tekrar karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Baharatla",
+          "text": "Tuz ve pul biber ekleyip son kez karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Dinlendir",
+          "text": "En az 30 dakika buzdolabında dinlendirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis Et",
+          "text": "Dinlendirdikten sonra servis yapın."
+        }
+      ]
     }
   ]
 }
