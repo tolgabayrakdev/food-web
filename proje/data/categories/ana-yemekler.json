@@ -441,6 +441,90 @@
           "text": "Sıcak servis yapın."
         }
       ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "107",
+      "name": "Hünkar Beğendi Tarifi",
+      "description": "Patlıcan püresi üzerine kuzu eti ile hazırlanan geleneksel Osmanlı yemeği",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1743859808/hunkar-begendi_oyygus.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT30M",
+      "cookTime": "PT90M",
+      "totalTime": "PT120M",
+      "keywords": "hünkar beğendi, kuzu eti, patlıcan püresi",
+      "recipeYield": "4 servings",
+      "recipeCategory": "Ana Yemek",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "380 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.9,
+        "ratingCount": 156
+      },
+      "recipeIngredient": [
+        "500g kuzu eti",
+        "6 adet patlıcan",
+        "2 adet soğan",
+        "2 adet domates",
+        "2 yemek kaşığı tereyağı",
+        "2 yemek kaşığı un",
+        "1 su bardağı süt",
+        "1 su bardağı kaşar peyniri",
+        "Tuz, karabiber, kekik"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Etleri Hazırla",
+          "text": "Kuzu etlerini kuşbaşı doğrayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Etleri Pişir",
+          "text": "Etleri soğanlarla birlikte kavurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sos Ekle",
+          "text": "Domatesleri ekleyip pişirmeye devam edin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Patlıcanları Hazırla",
+          "text": "Patlıcanları közleyip kabuklarını soyun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Püre Hazırla",
+          "text": "Patlıcanları püre haline getirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Beyaz Sos",
+          "text": "Tereyağı ve unu kavurup süt ekleyerek beyaz sos hazırlayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Püreyi Birleştir",
+          "text": "Patlıcan püresini beyaz sos ile birleştirip kaşar peyniri ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis Et",
+          "text": "Pürenin üzerine etleri yerleştirip servis yapın."
+        }
+      ]
     }
   ]
 }
