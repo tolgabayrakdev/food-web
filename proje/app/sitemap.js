@@ -49,9 +49,14 @@ export default async function sitemap() {
       for (const recipe of category.recipes) {
         const recipeName = recipe.name || recipe.title || '';
         const slug = await createRecipeSlug(recipeName);
+        // Tarifin datePublished veya dateModified tarihini kullan
+        const lastModified = recipe.dateModified ? new Date(recipe.dateModified) : 
+                           recipe.datePublished ? new Date(recipe.datePublished) : 
+                           new Date();
+        
         recipePages.push({
           url: `${baseUrl}/kategori/${category.category}/${slug}`,
-          lastModified: new Date(),
+          lastModified: lastModified,
           changeFrequency: 'weekly',
           priority: 0.6,
         });
