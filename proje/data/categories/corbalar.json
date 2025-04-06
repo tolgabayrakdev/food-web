@@ -286,6 +286,157 @@
           "text": "Üzerine fesleğen yaprakları ekleyin."
         }
       ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "205",
+      "name": "Tarhana Çorbası Tarifi",
+      "description": "Geleneksel Türk mutfağının fermente çorbası",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1743969599/domates-corbasi_iyoazj.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT10M",
+      "cookTime": "PT25M",
+      "totalTime": "PT35M",
+      "keywords": "tarhana çorbası, çorba, fermente çorba",
+      "recipeYield": "4 servings",
+      "recipeCategory": "Çorba",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "150 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.7,
+        "ratingCount": 132
+      },
+      "recipeIngredient": [
+        "1 su bardağı tarhana",
+        "1 adet soğan",
+        "2 yemek kaşığı tereyağı",
+        "1 yemek kaşığı domates salçası",
+        "1 tatlı kaşığı tuz",
+        "Karabiber, pul biber",
+        "Nane"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Soğanı Kavur",
+          "text": "Soğanı tereyağında pembeleşene kadar kavurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Salça Ekle",
+          "text": "Salçayı ekleyip kavurmaya devam edin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Tarhanayı Ekle",
+          "text": "Tarhanayı ekleyip karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Su Ekle",
+          "text": "Üzerine su ekleyip kaynatın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "Kısık ateşte 15-20 dakika pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Süsle",
+          "text": "Üzerine nane serperek servis yapın."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "206",
+      "name": "Sebze Çorbası Tarifi",
+      "description": "Taze sebzelerle hazırlanan sağlıklı çorba",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1743969646/sebze-corbasi_sjx3h2.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2024-03-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT15M",
+      "cookTime": "PT30M",
+      "totalTime": "PT45M",
+      "keywords": "sebze çorbası, çorba, sağlıklı çorba",
+      "recipeYield": "6 servings",
+      "recipeCategory": "Çorba",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "130 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.6,
+        "ratingCount": 145
+      },
+      "recipeIngredient": [
+        "2 adet havuç",
+        "2 adet patates",
+        "1 adet kabak",
+        "1 adet soğan",
+        "2 diş sarımsak",
+        "2 yemek kaşığı zeytinyağı",
+        "1 tatlı kaşığı tuz",
+        "Karabiber, kekik",
+        "Maydanoz"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Sebzeleri Hazırla",
+          "text": "Tüm sebzeleri küp küp doğrayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Soğan ve Sarımsak",
+          "text": "Soğan ve sarımsağı zeytinyağında kavurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sebzeleri Ekle",
+          "text": "Doğranmış sebzeleri ekleyip karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Su Ekle",
+          "text": "Üzerini geçecek kadar su ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "Sebzeler yumuşayana kadar pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Blenderdan Geçir",
+          "text": "İsterseniz blenderdan geçirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Süsle",
+          "text": "Üzerine maydanoz serperek servis yapın."
+        }
+      ]
     }
   ]
 }
