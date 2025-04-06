@@ -12,7 +12,20 @@ export const getAllCategories = cache(async () => {
   try {
     const indexPath = path.join(categoriesDir, 'index.json');
     const categoriesData = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
-    return categoriesData;
+    
+    // Update recipe counts for each category
+    const updatedCategories = await Promise.all(
+      categoriesData.map(async (category) => {
+        const categoryPath = path.join(categoriesDir, `${category.category}.json`);
+        const categoryData = JSON.parse(fs.readFileSync(categoryPath, 'utf8'));
+        return {
+          ...category,
+          recipeCount: categoryData.recipes?.length || 0
+        };
+      })
+    );
+    
+    return updatedCategories;
   } catch (error) {
     console.error('Error loading categories:', error);
     return [];
