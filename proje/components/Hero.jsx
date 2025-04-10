@@ -7,16 +7,15 @@ export default function Hero() {
   return (
     <div className="relative">
       {/* Background Image Container */}
-      <div className="absolute inset-0 w-full h-[80vh] md:h-[90vh] overflow-hidden">
+      <div className="absolute inset-0 w-full h-[80vh] md:h-[90vh]">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
             backgroundImage: "url('/images/placeholder-food.jpg')",
-            backgroundAttachment: "scroll",
-            willChange: "transform"
+            backgroundAttachment: "fixed"
           }}
         />
-        <div className="absolute inset-0 bg-black bg-opacity-60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
       </div>
       
       {/* Content Container */}
