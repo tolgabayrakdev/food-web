@@ -5,6 +5,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { getRecipeBySlug, getCategoryBySlug, getAllCategories, createRecipeSlug } from "@/lib/recipes";
 
+// JSON-LD için Script bileşeni
+import Script from "next/script";
+
 export async function generateMetadata({ params }) {
   const { slug, recipeSlug } = await params;
   
@@ -20,6 +23,33 @@ export async function generateMetadata({ params }) {
     title: `${recipe.name} - Lezzet Hazinesi`,
     description: recipe.description,
   };
+}
+
+// JSON-LD için yardımcı fonksiyon
+function prepareRecipeJsonLd(recipe) {
+  // Tüm gerekli alanları kopyala ve formatla
+  const jsonLd = {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": recipe.name,
+    "image": recipe.image,
+    "author": recipe.author,
+    "datePublished": recipe.datePublished,
+    "description": recipe.description,
+    "recipeCuisine": recipe.recipeCuisine,
+    "prepTime": recipe.prepTime,
+    "cookTime": recipe.cookTime,
+    "totalTime": recipe.totalTime,
+    "keywords": recipe.keywords,
+    "recipeYield": recipe.recipeYield,
+    "recipeCategory": recipe.recipeCategory,
+    "nutrition": recipe.nutrition,
+    "aggregateRating": recipe.aggregateRating,
+    "recipeIngredient": recipe.recipeIngredient,
+    "recipeInstructions": recipe.recipeInstructions
+  };
+  
+  return jsonLd;
 }
 
 export async function generateStaticParams() {
@@ -55,8 +85,18 @@ export default async function RecipePage({ params }) {
     notFound();
   }
   
+  // Recipe JSON-LD'yi hazırla
+  const recipeJsonLd = prepareRecipeJsonLd(recipe);
+  
   return (
     <div className="min-h-screen flex flex-col">
+      {/* JSON-LD Schema */}
+      <Script
+        id="recipe-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(recipeJsonLd) }}
+      />
+      
       <Navbar />
       
       <main className="flex-grow bg-indigo-50">
