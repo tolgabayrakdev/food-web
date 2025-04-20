@@ -525,6 +525,187 @@
           "text": "Pürenin üzerine etleri yerleştirip servis yapın."
         }
       ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "108",
+      "name": "İzmir Köfte Tarifi",
+      "description": "Patates ve biberle fırında pişen İzmir'e özgü köfte tarifi",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1745178935/izmir-kofte_exv1e6.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2025-04-08",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT30M",
+      "cookTime": "PT40M",
+      "totalTime": "PT70M",
+      "keywords": "izmir köfte, köfte, fırın yemeği, patatesli köfte",
+      "recipeYield": "4 servings",
+      "recipeCategory": "Ana Yemek",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "350 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.8,
+        "ratingCount": 175
+      },
+      "recipeIngredient": [
+        "500g dana kıyma",
+        "1 adet soğan",
+        "2 dilim bayat ekmek",
+        "1 adet yumurta",
+        "2 diş sarımsak",
+        "1 demet maydanoz",
+        "1 çay kaşığı kimyon",
+        "4 adet patates",
+        "3 adet sivri biber",
+        "2 adet domates",
+        "2 yemek kaşığı domates salçası",
+        "2 yemek kaşığı zeytinyağı",
+        "1 su bardağı sıcak su",
+        "Tuz, karabiber, pul biber"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Köfte Harcını Hazırla",
+          "text": "Kıyma, rendelenmiş soğan, ıslatılıp sıkılmış ekmek, yumurta, sarımsak, maydanoz ve baharatları iyice yoğurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Köfteleri Şekillendir",
+          "text": "Köfte harcından parmak şeklinde uzun köfteler hazırlayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Köfteleri Kızart",
+          "text": "Köfteleri az yağda hafifçe kızartın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sebzeleri Hazırla",
+          "text": "Patatesleri ve biberleri dilimleyin, domatesleri küp küp doğrayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Fırın Tepsisine Yerleştir",
+          "text": "Fırın tepsisine önce patatesleri, sonra köfteleri ve biberleri dizin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sos Hazırla",
+          "text": "Domates salçası, zeytinyağı, sıcak su ve baharatları karıştırarak sos hazırlayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sosu Dök",
+          "text": "Hazırladığınız sosu köftelerin ve sebzelerin üzerine dökün."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "180 derece fırında 40 dakika kadar pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis Et",
+          "text": "Sıcak olarak, yanında pilav ile servis yapın."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "id": "109",
+      "name": "Etli Güveç Tarifi",
+      "description": "Fırında sebzeler ve etle hazırlanan enfes bir yemek",
+      "image": [
+        "https://res.cloudinary.com/dwcsscwme/image/upload/v1745178843/etli-sebzeli-guvec_lfitfp.jpg"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Lezzet Hazinesi"
+      },
+      "datePublished": "2025-04-10",
+      "recipeCuisine": "Turkish",
+      "prepTime": "PT30M",
+      "cookTime": "PT75M",
+      "totalTime": "PT105M",
+      "keywords": "güveç, et, sebze, fırın yemeği",
+      "recipeYield": "6 servings",
+      "recipeCategory": "Ana Yemek",
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "360 calories"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.7,
+        "ratingCount": 132
+      },
+      "recipeIngredient": [
+        "500g kuzu eti",
+        "2 adet patates",
+        "2 adet havuç",
+        "2 adet patlıcan",
+        "2 adet biber",
+        "1 adet soğan",
+        "3 diş sarımsak",
+        "2 adet domates",
+        "3 yemek kaşığı zeytinyağı",
+        "1 tatlı kaşığı domates salçası",
+        "1 su bardağı sıcak su",
+        "Tuz, karabiber, kekik"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "name": "Sebzeleri Hazırla",
+          "text": "Tüm sebzeleri küp şeklinde doğrayın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Eti Sotele",
+          "text": "Kuzu etini zeytinyağında soteleleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Soğan ve Sarımsak Ekle",
+          "text": "Soğan ve sarımsakları ekleyip kavurun."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Salça Ekle",
+          "text": "Domates salçasını ekleyip karıştırın."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sebzeleri Ekle",
+          "text": "Tüm sebzeleri güvece ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Sıvı ve Baharatları Ekle",
+          "text": "Sıcak su, tuz, karabiber ve kekiği ekleyin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pişir",
+          "text": "Kapağını kapatıp 180 derece fırında 75 dakika pişirin."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Servis Et",
+          "text": "Sıcak olarak servis yapın."
+        }
+      ]
     }
   ]
 }
